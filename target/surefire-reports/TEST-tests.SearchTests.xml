@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="tests.SearchTests" time="119.875" tests="8" errors="4" skipped="0" failures="0">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="http.proxyHost" value="127.0.0.1"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/n.porotkova/GitHub/JavaAppiumMaven/target/test-classes:/Users/n.porotkova/GitHub/JavaAppiumMaven/target/classes:/Users/n.porotkova/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/n.porotkova/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/n.porotkova/.m2/repository/io/appium/java-client/7.0.0/java-client-7.0.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/n.porotkova/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/n.porotkova/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/n.porotkova/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/n.porotkova/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/n.porotkova/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/n.porotkova/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/n.porotkova/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/n.porotkova/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/n.porotkova/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/n.porotkova/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/n.porotkova/.m2/repository/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar:/Users/n.porotkova/.m2/repository/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6.jar:/Users/n.porotkova/.m2/repository/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10.jar:/Users/n.porotkova/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/n.porotkova/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/n.porotkova/.m2/repository/cglib/cglib/3.2.8/cglib-3.2.8.jar:/Users/n.porotkova/.m2/repository/org/ow2/asm/asm/6.2.1/asm-6.2.1.jar:/Users/n.porotkova/.m2/repository/org/apache/ant/ant/1.10.3/ant-1.10.3.jar:/Users/n.porotkova/.m2/repository/org/apache/ant/ant-launcher/1.10.3/ant-launcher-1.10.3.jar:/Users/n.porotkova/.m2/repository/commons-validator/commons-validator/1.6/commons-validator-1.6.jar:/Users/n.porotkova/.m2/repository/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar:/Users/n.porotkova/.m2/repository/commons-digester/commons-digester/1.8.1/commons-digester-1.8.1.jar:/Users/n.porotkova/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/n.porotkova/.m2/repository/org/apache/commons/commons-lang3/3.8/commons-lang3-3.8.jar:/Users/n.porotkova/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/n.porotkova/.m2/repository/org/springframework/spring-context/5.1.0.RELEASE/spring-context-5.1.0.RELEASE.jar:/Users/n.porotkova/.m2/repository/org/springframework/spring-aop/5.1.0.RELEASE/spring-aop-5.1.0.RELEASE.jar:/Users/n.porotkova/.m2/repository/org/springframework/spring-beans/5.1.0.RELEASE/spring-beans-5.1.0.RELEASE.jar:/Users/n.porotkova/.m2/repository/org/springframework/spring-core/5.1.0.RELEASE/spring-core-5.1.0.RELEASE.jar:/Users/n.porotkova/.m2/repository/org/springframework/spring-jcl/5.1.0.RELEASE/spring-jcl-5.1.0.RELEASE.jar:/Users/n.porotkova/.m2/repository/org/springframework/spring-expression/5.1.0.RELEASE/spring-expression-5.1.0.RELEASE.jar:/Users/n.porotkova/.m2/repository/org/aspectj/aspectjweaver/1.9.1/aspectjweaver-1.9.1.jar:/Users/n.porotkova/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:"/>
+    <property name="https.proxyPort" value="8888"/>
+    <property name="java.vm.vendor" value="AdoptOpenJDK"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://adoptopenjdk.net/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib"/>
+    <property name="sun.java.command" value="/Users/n.porotkova/GitHub/JavaAppiumMaven/target/surefire/surefirebooter189561751350502160.jar /Users/n.porotkova/GitHub/JavaAppiumMaven/target/surefire 2022-03-30T11-42-18_881-jvmRun1 surefire6830309489803499766tmp surefire_0360529203468594404tmp"/>
+    <property name="surefire.test.class.path" value="/Users/n.porotkova/GitHub/JavaAppiumMaven/target/test-classes:/Users/n.porotkova/GitHub/JavaAppiumMaven/target/classes:/Users/n.porotkova/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/n.porotkova/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/n.porotkova/.m2/repository/io/appium/java-client/7.0.0/java-client-7.0.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/n.porotkova/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/n.porotkova/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/n.porotkova/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/n.porotkova/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/n.porotkova/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/n.porotkova/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/n.porotkova/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/n.porotkova/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/n.porotkova/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/n.porotkova/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/n.porotkova/.m2/repository/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar:/Users/n.porotkova/.m2/repository/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6.jar:/Users/n.porotkova/.m2/repository/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10.jar:/Users/n.porotkova/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/n.porotkova/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/n.porotkova/.m2/repository/cglib/cglib/3.2.8/cglib-3.2.8.jar:/Users/n.porotkova/.m2/repository/org/ow2/asm/asm/6.2.1/asm-6.2.1.jar:/Users/n.porotkova/.m2/repository/org/apache/ant/ant/1.10.3/ant-1.10.3.jar:/Users/n.porotkova/.m2/repository/org/apache/ant/ant-launcher/1.10.3/ant-launcher-1.10.3.jar:/Users/n.porotkova/.m2/repository/commons-validator/commons-validator/1.6/commons-validator-1.6.jar:/Users/n.porotkova/.m2/repository/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar:/Users/n.porotkova/.m2/repository/commons-digester/commons-digester/1.8.1/commons-digester-1.8.1.jar:/Users/n.porotkova/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/n.porotkova/.m2/repository/org/apache/commons/commons-lang3/3.8/commons-lang3-3.8.jar:/Users/n.porotkova/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/n.porotkova/.m2/repository/org/springframework/spring-context/5.1.0.RELEASE/spring-context-5.1.0.RELEASE.jar:/Users/n.porotkova/.m2/repository/org/springframework/spring-aop/5.1.0.RELEASE/spring-aop-5.1.0.RELEASE.jar:/Users/n.porotkova/.m2/repository/org/springframework/spring-beans/5.1.0.RELEASE/spring-beans-5.1.0.RELEASE.jar:/Users/n.porotkova/.m2/repository/org/springframework/spring-core/5.1.0.RELEASE/spring-core-5.1.0.RELEASE.jar:/Users/n.porotkova/.m2/repository/org/springframework/spring-jcl/5.1.0.RELEASE/spring-jcl-5.1.0.RELEASE.jar:/Users/n.porotkova/.m2/repository/org/springframework/spring-expression/5.1.0.RELEASE/spring-expression-5.1.0.RELEASE.jar:/Users/n.porotkova/.m2/repository/org/aspectj/aspectjweaver/1.9.1/aspectjweaver-1.9.1.jar:/Users/n.porotkova/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/n.porotkova"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre"/>
+    <property name="basedir" value="/Users/n.porotkova/GitHub/JavaAppiumMaven"/>
+    <property name="https.proxyHost" value="127.0.0.1"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/n.porotkova/GitHub/JavaAppiumMaven/target/surefire/surefirebooter189561751350502160.jar"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_282-b08"/>
+    <property name="user.name" value="n.porotkova"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.16"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/n.porotkova/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/AdoptOpenJDK/openjdk-support/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/04/46skk9bs6hzb10f5n_0r_9jm0000gp/T/"/>
+    <property name="java.version" value="1.8.0_282"/>
+    <property name="user.dir" value="/Users/n.porotkova/GitHub/JavaAppiumMaven"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/n.porotkova/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="AdoptOpenJDK"/>
+    <property name="java.vm.version" value="25.282-b08"/>
+    <property name="java.ext.dirs" value="/Users/n.porotkova/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="http.proxyPort" value="8888"/>
+  </properties>
+  <testcase name="testAmountOfEmptySearch" classname="tests.SearchTests" time="14.501"/>
+  <testcase name="testCancelSearch" classname="tests.SearchTests" time="18.837">
+    <error message="Expected condition failed: Cannot find search cancel button&#10; (tried for 5 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Expected condition failed: Cannot find search cancel button
+ (tried for 5 second(s) with 500 milliseconds interval)
+	at tests.SearchTests.testCancelSearch(SearchTests.java:31)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'k-1927', ip: 'fe80:0:0:0:1c06:f40e:7368:ec33%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_282'
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {app: /Users/n.porotkova/GitHub/a..., browserName: , databaseEnabled: false, deviceName: iPhone 11, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, orientation: PORTRAIT, platform: MAC, platformName: iOS, platformVersion: 14.5, takesScreenshot: true, udid: 898461AC-5E84-466F-A84B-D8F..., webStorageEnabled: false}
+Session ID: 27fb1ed0-3708-495d-95d4-c74e6638def8
+*** Element info: {Using=-ios class chain, value=:**/XCUIElementTypeStaticText[`label == 'Cancel'`]}
+	at tests.SearchTests.testCancelSearch(SearchTests.java:31)
+</error>
+    <system-err><![CDATA[мар 30, 2022 11:47:53 AM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="testAmountOfNoEpmtySearch" classname="tests.SearchTests" time="15.308"/>
+  <testcase name="testCheckSearchResultsForQuery" classname="tests.SearchTests" time="14.91">
+    <error message="An unknown server-side error occurred while processing the command. Original error: The attribute &apos;text&apos; is unknown. Valid attribute names are: (&#10;    UID,&#10;    accessibilityContainer,&#10;    accessible,&#10;    enabled,&#10;    frame,&#10;    index,&#10;    label,&#10;    name,&#10;    rect,&#10;    selected,&#10;    type,&#10;    value,&#10;    visible,&#10;    wdAccessibilityContainer,&#10;    wdAccessible,&#10;    wdEnabled,&#10;    wdFrame,&#10;    wdIndex,&#10;    wdLabel,&#10;    wdName,&#10;    wdRect,&#10;    wdSelected,&#10;    wdType,&#10;    wdUID,&#10;    wdValue,&#10;    wdVisible&#10;)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;k-1927&apos;, ip: &apos;fe80:0:0:0:1c06:f40e:7368:ec33%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_282&apos;&#10;Driver info: io.appium.java_client.ios.IOSDriver&#10;Capabilities {app: /Users/n.porotkova/GitHub/a..., browserName: , databaseEnabled: false, deviceName: iPhone 11, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, orientation: PORTRAIT, platform: MAC, platformName: iOS, platformVersion: 14.5, takesScreenshot: true, udid: 898461AC-5E84-466F-A84B-D8F..., webStorageEnabled: false}&#10;Session ID: 482a9af1-17c4-433f-a071-f581eeed6c21" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+An unknown server-side error occurred while processing the command. Original error: The attribute 'text' is unknown. Valid attribute names are: (
+    UID,
+    accessibilityContainer,
+    accessible,
+    enabled,
+    frame,
+    index,
+    label,
+    name,
+    rect,
+    selected,
+    type,
+    value,
+    visible,
+    wdAccessibilityContainer,
+    wdAccessible,
+    wdEnabled,
+    wdFrame,
+    wdIndex,
+    wdLabel,
+    wdName,
+    wdRect,
+    wdSelected,
+    wdType,
+    wdUID,
+    wdValue,
+    wdVisible
+)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'k-1927', ip: 'fe80:0:0:0:1c06:f40e:7368:ec33%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_282'
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {app: /Users/n.porotkova/GitHub/a..., browserName: , databaseEnabled: false, deviceName: iPhone 11, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, orientation: PORTRAIT, platform: MAC, platformName: iOS, platformVersion: 14.5, takesScreenshot: true, udid: 898461AC-5E84-466F-A84B-D8F..., webStorageEnabled: false}
+Session ID: 482a9af1-17c4-433f-a071-f581eeed6c21
+	at tests.SearchTests.testCheckSearchResultsForQuery(SearchTests.java:87)
+</error>
+    <system-err><![CDATA[мар 30, 2022 11:48:27 AM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="testCheckSearchResultByTitleAndDescription" classname="tests.SearchTests" time="17.021"/>
+  <testcase name="testCheckSearchResultsAndCancelSearch" classname="tests.SearchTests" time="14.832">
+    <error message="An unknown server-side error occurred while processing the command. Original error: The attribute &apos;text&apos; is unknown. Valid attribute names are: (&#10;    UID,&#10;    accessibilityContainer,&#10;    accessible,&#10;    enabled,&#10;    frame,&#10;    index,&#10;    label,&#10;    name,&#10;    rect,&#10;    selected,&#10;    type,&#10;    value,&#10;    visible,&#10;    wdAccessibilityContainer,&#10;    wdAccessible,&#10;    wdEnabled,&#10;    wdFrame,&#10;    wdIndex,&#10;    wdLabel,&#10;    wdName,&#10;    wdRect,&#10;    wdSelected,&#10;    wdType,&#10;    wdUID,&#10;    wdValue,&#10;    wdVisible&#10;)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;k-1927&apos;, ip: &apos;fe80:0:0:0:1c06:f40e:7368:ec33%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_282&apos;&#10;Driver info: io.appium.java_client.ios.IOSDriver&#10;Capabilities {app: /Users/n.porotkova/GitHub/a..., browserName: , databaseEnabled: false, deviceName: iPhone 11, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, orientation: PORTRAIT, platform: MAC, platformName: iOS, platformVersion: 14.5, takesScreenshot: true, udid: 898461AC-5E84-466F-A84B-D8F..., webStorageEnabled: false}&#10;Session ID: 2c0a38dd-6c7c-4036-8d15-61636c9b514e" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+An unknown server-side error occurred while processing the command. Original error: The attribute 'text' is unknown. Valid attribute names are: (
+    UID,
+    accessibilityContainer,
+    accessible,
+    enabled,
+    frame,
+    index,
+    label,
+    name,
+    rect,
+    selected,
+    type,
+    value,
+    visible,
+    wdAccessibilityContainer,
+    wdAccessible,
+    wdEnabled,
+    wdFrame,
+    wdIndex,
+    wdLabel,
+    wdName,
+    wdRect,
+    wdSelected,
+    wdType,
+    wdUID,
+    wdValue,
+    wdVisible
+)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'k-1927', ip: 'fe80:0:0:0:1c06:f40e:7368:ec33%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_282'
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {app: /Users/n.porotkova/GitHub/a..., browserName: , databaseEnabled: false, deviceName: iPhone 11, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, orientation: PORTRAIT, platform: MAC, platformName: iOS, platformVersion: 14.5, takesScreenshot: true, udid: 898461AC-5E84-466F-A84B-D8F..., webStorageEnabled: false}
+Session ID: 2c0a38dd-6c7c-4036-8d15-61636c9b514e
+	at tests.SearchTests.testCheckSearchResultsAndCancelSearch(SearchTests.java:68)
+</error>
+    <system-err><![CDATA[мар 30, 2022 11:48:59 AM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="testCheckSearchFieldCaption" classname="tests.SearchTests" time="8.801">
+    <error message="An unknown server-side error occurred while processing the command. Original error: The attribute &apos;text&apos; is unknown. Valid attribute names are: (&#10;    UID,&#10;    accessibilityContainer,&#10;    accessible,&#10;    enabled,&#10;    frame,&#10;    index,&#10;    label,&#10;    name,&#10;    rect,&#10;    selected,&#10;    type,&#10;    value,&#10;    visible,&#10;    wdAccessibilityContainer,&#10;    wdAccessible,&#10;    wdEnabled,&#10;    wdFrame,&#10;    wdIndex,&#10;    wdLabel,&#10;    wdName,&#10;    wdRect,&#10;    wdSelected,&#10;    wdType,&#10;    wdUID,&#10;    wdValue,&#10;    wdVisible&#10;)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;k-1927&apos;, ip: &apos;fe80:0:0:0:1c06:f40e:7368:ec33%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_282&apos;&#10;Driver info: io.appium.java_client.ios.IOSDriver&#10;Capabilities {app: /Users/n.porotkova/GitHub/a..., browserName: , databaseEnabled: false, deviceName: iPhone 11, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, orientation: PORTRAIT, platform: MAC, platformName: iOS, platformVersion: 14.5, takesScreenshot: true, udid: 898461AC-5E84-466F-A84B-D8F..., webStorageEnabled: false}&#10;Session ID: 53976fd2-a8de-4b98-b04a-0beb28c56a3b" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+An unknown server-side error occurred while processing the command. Original error: The attribute 'text' is unknown. Valid attribute names are: (
+    UID,
+    accessibilityContainer,
+    accessible,
+    enabled,
+    frame,
+    index,
+    label,
+    name,
+    rect,
+    selected,
+    type,
+    value,
+    visible,
+    wdAccessibilityContainer,
+    wdAccessible,
+    wdEnabled,
+    wdFrame,
+    wdIndex,
+    wdLabel,
+    wdName,
+    wdRect,
+    wdSelected,
+    wdType,
+    wdUID,
+    wdValue,
+    wdVisible
+)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'k-1927', ip: 'fe80:0:0:0:1c06:f40e:7368:ec33%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_282'
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {app: /Users/n.porotkova/GitHub/a..., browserName: , databaseEnabled: false, deviceName: iPhone 11, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, orientation: PORTRAIT, platform: MAC, platformName: iOS, platformVersion: 14.5, takesScreenshot: true, udid: 898461AC-5E84-466F-A84B-D8F..., webStorageEnabled: false}
+Session ID: 53976fd2-a8de-4b98-b04a-0beb28c56a3b
+	at tests.SearchTests.testCheckSearchFieldCaption(SearchTests.java:15)
+</error>
+    <system-err><![CDATA[мар 30, 2022 11:49:14 AM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="testSearch" classname="tests.SearchTests" time="15.664"/>
+</testsuite>
