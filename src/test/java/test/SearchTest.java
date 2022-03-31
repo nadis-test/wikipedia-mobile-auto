@@ -3,6 +3,7 @@ package test;
 import lib.CoreTestCase;
 import lib.ui.SearchPageObject;
 import lib.ui.factories.SearchPageObjectFactory;
+import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
@@ -40,7 +41,7 @@ public class SearchTest extends CoreTestCase {
         String search_line = "Linkin Park diskography";
         SearchPageObject.typeSearchLine(search_line);
         int amount_search_results = SearchPageObject.getAmountOfFoundArticles();
-        assertTrue(
+        Assert.assertTrue(
                 "No search results found",
                 amount_search_results > 0
         );

@@ -4,6 +4,7 @@ import lib.CoreTestCase;
 import lib.Platform;
 import lib.ui.*;
 import lib.ui.factories.*;
+import org.junit.Assert;
 import org.junit.Test;
 
 public class MyListsTest extends CoreTestCase {
@@ -35,7 +36,7 @@ public class MyListsTest extends CoreTestCase {
 
             //wait for redirect from authorization form
             ArticlePageObject.waitForTitleElement();
-            assertEquals("We are not on the same page after login", article_title, ArticlePageObject.getArticleTitle());
+            Assert.assertEquals("We are not on the same page after login", article_title, ArticlePageObject.getArticleTitle());
             ArticlePageObject.addArticlesToMySaved();
         }
 

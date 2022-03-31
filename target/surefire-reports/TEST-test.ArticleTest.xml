@@ -1,69 +1,139 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="0" failures="0" name="test.ArticleTest" time="0" errors="0" skipped="0">
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="test.ArticleTest" time="27.639" tests="3" errors="2" skipped="0" failures="1">
   <properties>
-    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
-    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib"/>
-    <property name="java.vm.version" value="25.282-b08"/>
     <property name="gopherProxySet" value="false"/>
-    <property name="java.vm.vendor" value="AdoptOpenJDK"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/n.porotkova/GitHub/JavaAppiumMaven"/>
-    <property name="java.vendor.url" value="https://adoptopenjdk.net/"/>
-    <property name="path.separator" value=":"/>
-    <property name="guice.disable.misplaced.annotation.check" value="true"/>
-    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
     <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/n.porotkova/GitHub/JavaAppiumMaven/target/test-classes:/Users/n.porotkova/GitHub/JavaAppiumMaven/target/classes:/Users/n.porotkova/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/n.porotkova/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/n.porotkova/.m2/repository/io/appium/java-client/6.1.0/java-client-6.1.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-java/3.12.0/selenium-java-3.12.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.12.0/selenium-chrome-driver-3.12.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.12.0/selenium-edge-driver-3.12.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.12.0/selenium-firefox-driver-3.12.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.12.0/selenium-ie-driver-3.12.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.12.0/selenium-opera-driver-3.12.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.12.0/selenium-remote-driver-3.12.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.12.0/selenium-safari-driver-3.12.0.jar:/Users/n.porotkova/.m2/repository/net/bytebuddy/byte-buddy/1.8.3/byte-buddy-1.8.3.jar:/Users/n.porotkova/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/n.porotkova/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/n.porotkova/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/n.porotkova/.m2/repository/com/google/guava/guava/23.6-jre/guava-23.6-jre.jar:/Users/n.porotkova/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/n.porotkova/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/n.porotkova/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/n.porotkova/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/n.porotkova/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/n.porotkova/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/Users/n.porotkova/.m2/repository/com/squareup/okhttp3/okhttp/3.9.1/okhttp-3.9.1.jar:/Users/n.porotkova/.m2/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-support/3.12.0/selenium-support-3.12.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-api/3.12.0/selenium-api-3.12.0.jar:/Users/n.porotkova/.m2/repository/com/google/code/gson/gson/2.8.4/gson-2.8.4.jar:/Users/n.porotkova/.m2/repository/org/apache/httpcomponents/httpclient/4.5.5/httpclient-4.5.5.jar:/Users/n.porotkova/.m2/repository/cglib/cglib/3.2.6/cglib-3.2.6.jar:/Users/n.porotkova/.m2/repository/org/ow2/asm/asm/6.0/asm-6.0.jar:/Users/n.porotkova/.m2/repository/org/apache/ant/ant/1.9.6/ant-1.9.6.jar:/Users/n.porotkova/.m2/repository/org/apache/ant/ant-launcher/1.9.6/ant-launcher-1.9.6.jar:/Users/n.porotkova/.m2/repository/commons-validator/commons-validator/1.6/commons-validator-1.6.jar:/Users/n.porotkova/.m2/repository/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar:/Users/n.porotkova/.m2/repository/commons-digester/commons-digester/1.8.1/commons-digester-1.8.1.jar:/Users/n.porotkova/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/n.porotkova/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/Users/n.porotkova/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/n.porotkova/.m2/repository/org/springframework/spring-context/5.0.5.RELEASE/spring-context-5.0.5.RELEASE.jar:/Users/n.porotkova/.m2/repository/org/springframework/spring-aop/5.0.5.RELEASE/spring-aop-5.0.5.RELEASE.jar:/Users/n.porotkova/.m2/repository/org/springframework/spring-beans/5.0.5.RELEASE/spring-beans-5.0.5.RELEASE.jar:/Users/n.porotkova/.m2/repository/org/springframework/spring-core/5.0.5.RELEASE/spring-core-5.0.5.RELEASE.jar:/Users/n.porotkova/.m2/repository/org/springframework/spring-jcl/5.0.5.RELEASE/spring-jcl-5.0.5.RELEASE.jar:/Users/n.porotkova/.m2/repository/org/springframework/spring-expression/5.0.5.RELEASE/spring-expression-5.0.5.RELEASE.jar:/Users/n.porotkova/.m2/repository/org/openpnp/opencv/3.2.0-1/opencv-3.2.0-1.jar:/Users/n.porotkova/.m2/repository/io/qameta/allure/allure-junit4/2.13.6/allure-junit4-2.13.6.jar:/Users/n.porotkova/.m2/repository/io/qameta/allure/allure-java-commons/2.13.6/allure-java-commons-2.13.6.jar:/Users/n.porotkova/.m2/repository/io/qameta/allure/allure-model/2.13.6/allure-model-2.13.6.jar:/Users/n.porotkova/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.11.2/jackson-databind-2.11.2.jar:/Users/n.porotkova/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.11.2/jackson-annotations-2.11.2.jar:/Users/n.porotkova/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.11.2/jackson-core-2.11.2.jar:/Users/n.porotkova/.m2/repository/org/apache/tika/tika-core/1.24.1/tika-core-1.24.1.jar:/Users/n.porotkova/.m2/repository/org/jooq/joor-java-8/0.9.13/joor-java-8-0.9.13.jar:/Users/n.porotkova/.m2/repository/org/aspectj/aspectjweaver/1.9.5/aspectjweaver-1.9.5.jar:/Users/n.porotkova/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/n.porotkova/.m2/repository/org/slf4j/slf4j-log4j12/1.7.30/slf4j-log4j12-1.7.30.jar:/Users/n.porotkova/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:"/>
+    <property name="java.vm.vendor" value="AdoptOpenJDK"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://adoptopenjdk.net/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Mac OS X"/>
     <property name="user.country" value="RU"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.os.patch.level" value="unknown"/>
-    <property name="test" value="ArticleTest#TestSuite"/>
-    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/n.porotkova/GitHub/JavaAppiumMaven"/>
-    <property name="java.runtime.version" value="1.8.0_282-b08"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/endorsed"/>
-    <property name="os.arch" value="x86_64"/>
-    <property name="java.io.tmpdir" value="/var/folders/04/46skk9bs6hzb10f5n_0r_9jm0000gp/T/"/>
-    <property name="line.separator" value="
-"/>
-    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="https.proxyHost" value="127.0.0.1"/>
-    <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.6.3_1/libexec/bin/m2.conf"/>
-    <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="/Users/n.porotkova/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
-    <property name="http.proxyPort" value="8888"/>
-    <property name="maven.conf" value="/usr/local/Cellar/maven/3.6.3_1/libexec/conf"/>
-    <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="java.class.version" value="52.0"/>
-    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="10.16"/>
-    <property name="library.jansi.path" value="/usr/local/Cellar/maven/3.6.3_1/libexec/lib/jansi-native"/>
-    <property name="user.home" value="/Users/n.porotkova"/>
-    <property name="user.timezone" value="Europe/Moscow"/>
-    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
-    <property name="java.specification.version" value="1.8"/>
-    <property name="file.encoding" value="UTF-8"/>
-    <property name="user.name" value="n.porotkova"/>
-    <property name="java.class.path" value="/usr/local/Cellar/maven/3.6.3_1/libexec/boot/plexus-classworlds-2.6.0.jar"/>
-    <property name="java.vm.specification.version" value="1.8"/>
-    <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -e -Dtest=ArticleTest#TestSuite test"/>
-    <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="user.language" value="ru"/>
-    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
-    <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.8.0_282"/>
-    <property name="java.ext.dirs" value="/Users/n.porotkova/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
-    <property name="http.proxyHost" value="127.0.0.1"/>
-    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/classes"/>
-    <property name="java.vendor" value="AdoptOpenJDK"/>
-    <property name="maven.home" value="/usr/local/Cellar/maven/3.6.3_1/libexec"/>
-    <property name="file.separator" value="/"/>
-    <property name="java.vendor.url.bug" value="https://github.com/AdoptOpenJDK/openjdk-support/issues"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib"/>
+    <property name="sun.java.command" value="/Users/n.porotkova/GitHub/JavaAppiumMaven/target/surefire/surefirebooter4982819674789214139.jar /Users/n.porotkova/GitHub/JavaAppiumMaven/target/surefire 2022-03-31T14-19-47_938-jvmRun1 surefire1862950102318267076tmp surefire_0764969285861027527tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="test" value="ArticleTest"/>
+    <property name="surefire.test.class.path" value="/Users/n.porotkova/GitHub/JavaAppiumMaven/target/test-classes:/Users/n.porotkova/GitHub/JavaAppiumMaven/target/classes:/Users/n.porotkova/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/n.porotkova/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/n.porotkova/.m2/repository/io/appium/java-client/6.1.0/java-client-6.1.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-java/3.12.0/selenium-java-3.12.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.12.0/selenium-chrome-driver-3.12.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.12.0/selenium-edge-driver-3.12.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.12.0/selenium-firefox-driver-3.12.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.12.0/selenium-ie-driver-3.12.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.12.0/selenium-opera-driver-3.12.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.12.0/selenium-remote-driver-3.12.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.12.0/selenium-safari-driver-3.12.0.jar:/Users/n.porotkova/.m2/repository/net/bytebuddy/byte-buddy/1.8.3/byte-buddy-1.8.3.jar:/Users/n.porotkova/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/n.porotkova/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/n.porotkova/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/n.porotkova/.m2/repository/com/google/guava/guava/23.6-jre/guava-23.6-jre.jar:/Users/n.porotkova/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/n.porotkova/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/n.porotkova/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/n.porotkova/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/n.porotkova/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/n.porotkova/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/Users/n.porotkova/.m2/repository/com/squareup/okhttp3/okhttp/3.9.1/okhttp-3.9.1.jar:/Users/n.porotkova/.m2/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-support/3.12.0/selenium-support-3.12.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-api/3.12.0/selenium-api-3.12.0.jar:/Users/n.porotkova/.m2/repository/com/google/code/gson/gson/2.8.4/gson-2.8.4.jar:/Users/n.porotkova/.m2/repository/org/apache/httpcomponents/httpclient/4.5.5/httpclient-4.5.5.jar:/Users/n.porotkova/.m2/repository/cglib/cglib/3.2.6/cglib-3.2.6.jar:/Users/n.porotkova/.m2/repository/org/ow2/asm/asm/6.0/asm-6.0.jar:/Users/n.porotkova/.m2/repository/org/apache/ant/ant/1.9.6/ant-1.9.6.jar:/Users/n.porotkova/.m2/repository/org/apache/ant/ant-launcher/1.9.6/ant-launcher-1.9.6.jar:/Users/n.porotkova/.m2/repository/commons-validator/commons-validator/1.6/commons-validator-1.6.jar:/Users/n.porotkova/.m2/repository/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar:/Users/n.porotkova/.m2/repository/commons-digester/commons-digester/1.8.1/commons-digester-1.8.1.jar:/Users/n.porotkova/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/n.porotkova/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/Users/n.porotkova/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/n.porotkova/.m2/repository/org/springframework/spring-context/5.0.5.RELEASE/spring-context-5.0.5.RELEASE.jar:/Users/n.porotkova/.m2/repository/org/springframework/spring-aop/5.0.5.RELEASE/spring-aop-5.0.5.RELEASE.jar:/Users/n.porotkova/.m2/repository/org/springframework/spring-beans/5.0.5.RELEASE/spring-beans-5.0.5.RELEASE.jar:/Users/n.porotkova/.m2/repository/org/springframework/spring-core/5.0.5.RELEASE/spring-core-5.0.5.RELEASE.jar:/Users/n.porotkova/.m2/repository/org/springframework/spring-jcl/5.0.5.RELEASE/spring-jcl-5.0.5.RELEASE.jar:/Users/n.porotkova/.m2/repository/org/springframework/spring-expression/5.0.5.RELEASE/spring-expression-5.0.5.RELEASE.jar:/Users/n.porotkova/.m2/repository/org/openpnp/opencv/3.2.0-1/opencv-3.2.0-1.jar:/Users/n.porotkova/.m2/repository/io/qameta/allure/allure-junit4/2.13.6/allure-junit4-2.13.6.jar:/Users/n.porotkova/.m2/repository/io/qameta/allure/allure-java-commons/2.13.6/allure-java-commons-2.13.6.jar:/Users/n.porotkova/.m2/repository/io/qameta/allure/allure-model/2.13.6/allure-model-2.13.6.jar:/Users/n.porotkova/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.11.2/jackson-databind-2.11.2.jar:/Users/n.porotkova/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.11.2/jackson-annotations-2.11.2.jar:/Users/n.porotkova/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.11.2/jackson-core-2.11.2.jar:/Users/n.porotkova/.m2/repository/org/apache/tika/tika-core/1.24.1/tika-core-1.24.1.jar:/Users/n.porotkova/.m2/repository/org/jooq/joor-java-8/0.9.13/joor-java-8-0.9.13.jar:/Users/n.porotkova/.m2/repository/org/aspectj/aspectjweaver/1.9.5/aspectjweaver-1.9.5.jar:/Users/n.porotkova/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/n.porotkova/.m2/repository/org/slf4j/slf4j-log4j12/1.7.30/slf4j-log4j12-1.7.30.jar:/Users/n.porotkova/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
+    <property name="allure.results.directory" value="/Users/n.porotkova/GitHub/JavaAppiumMaven/target/allure-results"/>
+    <property name="user.home" value="/Users/n.porotkova"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre"/>
+    <property name="basedir" value="/Users/n.porotkova/GitHub/JavaAppiumMaven"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/n.porotkova/GitHub/JavaAppiumMaven/target/surefire/surefirebooter4982819674789214139.jar:/Users/n.porotkova/.m2/repository/org/aspectj/aspectjweaver/1.9.5/aspectjweaver-1.9.5.jar"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="1.8.0_282-b08"/>
+    <property name="user.name" value="n.porotkova"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.16"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/n.porotkova/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/AdoptOpenJDK/openjdk-support/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/04/46skk9bs6hzb10f5n_0r_9jm0000gp/T/"/>
+    <property name="java.version" value="1.8.0_282"/>
+    <property name="user.dir" value="/Users/n.porotkova/GitHub/JavaAppiumMaven"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/n.porotkova/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="AdoptOpenJDK"/>
+    <property name="java.vm.version" value="25.282-b08"/>
+    <property name="java.ext.dirs" value="/Users/n.porotkova/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
-    <property name="https.proxyPort" value="8888"/>
-    <property name="sun.cpu.isalist" value=""/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
+  <testcase name="testArticleHasTitleElement" classname="test.ArticleTest" time="14.246">
+    <error message="Expected condition failed: Cannot find and click search result with substring + &apos;bject-oriented programming language&apos;&#10; (tried for 10 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Expected condition failed: Cannot find and click search result with substring + 'bject-oriented programming language'
+ (tried for 10 second(s) with 500 milliseconds interval)
+	at test.ArticleTest.testArticleHasTitleElement(ArticleTest.java:59)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.xpath: //a[contains(@class, 'title')][contains(data-title,'bject-oriented programming language')]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'k-1927', ip: 'fe80:0:0:0:c53:5b91:dabb:6a40%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_282'
+Driver info: driver.version: unknown
+	at test.ArticleTest.testArticleHasTitleElement(ArticleTest.java:59)
+</error>
+    <system-out><![CDATA[RotateScreenPortrait method does noting for platform mobile_web
+SkipWelcomePage method does noting for platform mobile_web
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 99.0.4844.17 (395f87df02eedda1d0e06d5ac0614b0eeb22a9e8-refs/branch-heads/4844@{#182}) on port 16929
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1648725591.402][WARNING]: This version of ChromeDriver has not been tested with Chrome version 100.
+мар 31, 2022 2:19:51 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="testCompareArticleTitle" classname="test.ArticleTest" time="4.176">
+    <failure message="Unexpected title on the article page expected:&lt;[Object-oriented programming language]&gt; but was:&lt;[Java (programming language)]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: Unexpected title on the article page expected:<[Object-oriented programming language]> but was:<[Java (programming language)]>
+	at test.ArticleTest.testCompareArticleTitle(ArticleTest.java:28)
+]]></failure>
+    <system-out><![CDATA[RotateScreenPortrait method does noting for platform mobile_web
+SkipWelcomePage method does noting for platform mobile_web
+Java (programming language)
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 99.0.4844.17 (395f87df02eedda1d0e06d5ac0614b0eeb22a9e8-refs/branch-heads/4844@{#182}) on port 22404
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1648725604.709][WARNING]: This version of ChromeDriver has not been tested with Chrome version 100.
+мар 31, 2022 2:20:04 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="testSwipeArticle" classname="test.ArticleTest" time="9.095">
+    <error message="Expected condition failed: Cannot find footer element on the end of the page&#10; (tried for 5 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Expected condition failed: Cannot find footer element on the end of the page
+ (tried for 5 second(s) with 500 milliseconds interval)
+	at test.ArticleTest.testSwipeArticle(ArticleTest.java:49)
+Caused by: org.openqa.selenium.InvalidSelectorException: 
+invalid selector: Unable to locate an element with the xpath expression css:footer because of the following error:
+NamespaceError: Failed to execute 'evaluate' on 'Document': The string 'css:footer' contains unresolvable namespaces.
+  (Session info: chrome=100.0.4896.60)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'k-1927', ip: 'fe80:0:0:0:c53:5b91:dabb:6a40%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_282'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 99.0.4844.17 (395f87df02eed..., userDataDir: /var/folders/04/46skk9bs6hz...}, goog:chromeOptions: {debuggerAddress: localhost:50549}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6d43ef85ae953f4ba4c97140891a0542
+*** Element info: {Using=xpath, value=css:footer}
+	at test.ArticleTest.testSwipeArticle(ArticleTest.java:49)
+</error>
+    <system-out><![CDATA[RotateScreenPortrait method does noting for platform mobile_web
+SkipWelcomePage method does noting for platform mobile_web
+swipeToFooter()
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 99.0.4844.17 (395f87df02eedda1d0e06d5ac0614b0eeb22a9e8-refs/branch-heads/4844@{#182}) on port 46929
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1648725608.838][WARNING]: This version of ChromeDriver has not been tested with Chrome version 100.
+мар 31, 2022 2:20:08 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
 </testsuite>

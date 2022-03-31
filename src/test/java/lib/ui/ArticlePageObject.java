@@ -1,6 +1,7 @@
 package lib.ui;
 
 import io.appium.java_client.AppiumDriver;
+import io.qameta.allure.Step;
 import lib.Platform;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -27,10 +28,12 @@ abstract public class ArticlePageObject extends MainPageObject {
         super(driver);
     }
 
+    @Step("Waiting for article title element")
     public WebElement waitForTitleElement(){
         return this.waitForElementPresent(TITLE, "Cannot find title element on page", 5);
     }
 
+    @Step("Getting an article title")
     public String getArticleTitle(){
         WebElement title_element = waitForTitleElement();
         if (Platform.getInstance().isAndroid()) {
@@ -41,6 +44,7 @@ abstract public class ArticlePageObject extends MainPageObject {
             return title_element.getText();}
     }
 
+    @Step("Swiping to the footer element")
     public void swipeToFooter(){
         System.out.println("swipeToFooter()");
         if (Platform.getInstance().isAndroid()){
@@ -53,6 +57,7 @@ abstract public class ArticlePageObject extends MainPageObject {
         }
     }
 
+    @Step("Adding an article to a new list in Saved")
     public void addArticleToNewList(String name_of_folder){
         //кликаю на кнопку Save на нижней панели
         this.waitForElementAndClick(SAVE_TO_MY_LIST_BUTTON,
@@ -76,6 +81,7 @@ abstract public class ArticlePageObject extends MainPageObject {
                 5);
     }
 
+    @Step("Adding an article to a existing list in Saved")
     public void addArticleToExistingList(String folder_name){
         //кликаю на кнопку Save на нижней панели
         this.waitForElementAndClick(SAVE_TO_MY_LIST_BUTTON,
@@ -92,6 +98,7 @@ abstract public class ArticlePageObject extends MainPageObject {
                 5);
     }
 
+    @Step("Closing the article and returning to search result page")
     public void closeArticle(){
         //return from article page to search results page
         if (Platform.getInstance().isIOS() || Platform.getInstance().isAndroid()) {
@@ -102,12 +109,14 @@ abstract public class ArticlePageObject extends MainPageObject {
                 Platform.getInstance().getPlatformVar());}
     }
 
+    @Step("Checking whether the article title has expected value")
     public void assertArticleHasTitle(){
         this.assertElementPresent(
                 TITLE,
                 "Tile defined by id '" + TITLE + "' was not found on article page");
     }
 
+    @Step("Adding an article to the Saved section. Not applicable on Android")
     public void addArticlesToMySaved(){
         if (Platform.getInstance().isMW()){
             this.removeArticleFromSavedIfItWasAdded();
@@ -116,6 +125,7 @@ abstract public class ArticlePageObject extends MainPageObject {
         this.waitForElementAndClick(SAVE_TO_MY_LIST_BUTTON, "Save button not found", 15);
     }
 
+    @Step("Removing article from the Saved section. Not applicable on Android and iOS")
     public void removeArticleFromSavedIfItWasAdded(){
         if (this.isElementPresent(OPTIONS_REMOVE_FROM_MY_LIST_BUTTON)){
             this.waitForElementAndClick(OPTIONS_REMOVE_FROM_MY_LIST_BUTTON,
