@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: test.ArticleTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 2, Skipped: 0, Time elapsed: 27.639 s <<< FAILURE! - in test.ArticleTest
-testArticleHasTitleElement(test.ArticleTest)  Time elapsed: 14.246 s  <<< ERROR!
+Tests run: 3, Failures: 1, Errors: 2, Skipped: 0, Time elapsed: 27.922 s <<< FAILURE! - in test.ArticleTest
+testArticleHasTitleElement(test.ArticleTest)  Time elapsed: 13.92 s  <<< ERROR!
 org.openqa.selenium.TimeoutException: 
 Expected condition failed: Cannot find and click search result with substring + 'bject-oriented programming language'
  (tried for 10 second(s) with 500 milliseconds interval)
@@ -15,11 +15,11 @@ System info: host: 'k-1927', ip: 'fe80:0:0:0:c53:5b91:dabb:6a40%en0', os.name: '
 Driver info: driver.version: unknown
 	at test.ArticleTest.testArticleHasTitleElement(ArticleTest.java:59)
 
-testCompareArticleTitle(test.ArticleTest)  Time elapsed: 4.176 s  <<< FAILURE!
+testCompareArticleTitle(test.ArticleTest)  Time elapsed: 4.289 s  <<< FAILURE!
 org.junit.ComparisonFailure: Unexpected title on the article page expected:<[Object-oriented programming language]> but was:<[Java (programming language)]>
 	at test.ArticleTest.testCompareArticleTitle(ArticleTest.java:28)
 
-testSwipeArticle(test.ArticleTest)  Time elapsed: 9.095 s  <<< ERROR!
+testSwipeArticle(test.ArticleTest)  Time elapsed: 9.589 s  <<< ERROR!
 org.openqa.selenium.TimeoutException: 
 Expected condition failed: Cannot find footer element on the end of the page
  (tried for 5 second(s) with 500 milliseconds interval)
@@ -32,8 +32,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
 System info: host: 'k-1927', ip: 'fe80:0:0:0:c53:5b91:dabb:6a40%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_282'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 99.0.4844.17 (395f87df02eed..., userDataDir: /var/folders/04/46skk9bs6hz...}, goog:chromeOptions: {debuggerAddress: localhost:50549}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6d43ef85ae953f4ba4c97140891a0542
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 99.0.4844.17 (395f87df02eed..., userDataDir: /var/folders/04/46skk9bs6hz...}, goog:chromeOptions: {debuggerAddress: localhost:52573}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 79d9a34a07f1c276c82abb0df3839a5a
 *** Element info: {Using=xpath, value=css:footer}
 	at test.ArticleTest.testSwipeArticle(ArticleTest.java:49)
 
