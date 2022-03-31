@@ -5,6 +5,8 @@ import junit.framework.TestCase;
 import lib.ui.WelcomePageObject;
 import lib.ui.factories.WelcomePageObjectFactory;
 import org.openqa.selenium.ScreenOrientation;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
 import java.time.Duration;
 
 public class CoreTestCase extends TestCase {
@@ -12,7 +14,7 @@ public class CoreTestCase extends TestCase {
             PLATFORM_ANDROID = "android",
             PLATFORM_IOS = "ios";
 
-    protected AppiumDriver driver;
+    protected RemoteWebDriver driver;
 
 
     @Override
@@ -21,6 +23,7 @@ public class CoreTestCase extends TestCase {
         driver = Platform.getInstance().getDriver();
         this.rotateScreenPortrait();
         this.skipWelcomePage();
+        this.openWikiWebPageForMobileWeb();
     }
 
     @Override
@@ -30,27 +33,44 @@ public class CoreTestCase extends TestCase {
     }
 
     protected void rotateScreenLandscape(){
-        driver.rotate(ScreenOrientation.LANDSCAPE);
+        if (driver instanceof AppiumDriver) {
+            AppiumDriver driver = (AppiumDriver) this.driver;
+            driver.rotate(ScreenOrientation.LANDSCAPE);
+        } else System.out.println("RotateScreenLandscape method does noting for platform " +
+                Platform.getInstance().getPlatformVar());
     }
 
     protected void rotateScreenPortrait(){
-        driver.rotate(ScreenOrientation.PORTRAIT);
+        if (driver instanceof AppiumDriver) {
+            AppiumDriver driver = (AppiumDriver) this.driver;
+            driver.rotate(ScreenOrientation.PORTRAIT);
+        } else System.out.println("RotateScreenPortrait method does noting for platform " +
+                Platform.getInstance().getPlatformVar());
     }
 
     protected void backgroundApp(int seconds){
-        driver.runAppInBackground(Duration.ofSeconds(seconds));
-    }
-
-    private void skipWelcomePageForIOSApp(){
-        if(Platform.getInstance().isIOS()) {
-            WelcomePageObject WelcomePageObject = new WelcomePageObject(driver);
-            WelcomePageObject.clickSkip();
-        }
+        if (driver instanceof AppiumDriver) {
+            AppiumDriver driver = (AppiumDriver) this.driver;
+            driver.runAppInBackground(Duration.ofSeconds(seconds));
+        } else System.out.println("RotateScreenPortrait method does noting for platform " +
+                Platform.getInstance().getPlatformVar());
     }
 
     private void skipWelcomePage() {
-        WelcomePageObject WelcomePageObject = WelcomePageObjectFactory.get(driver);
-        WelcomePageObject.clickSkip();
+        if (driver instanceof AppiumDriver) {
+            AppiumDriver driver = (AppiumDriver) this.driver;
+            WelcomePageObject WelcomePageObject = WelcomePageObjectFactory.get(driver);
+            WelcomePageObject.clickSkip();
+        } else System.out.println("SkipWelcomePage method does noting for platform " +
+                Platform.getInstance().getPlatformVar());
+    }
+
+    protected void openWikiWebPageForMobileWeb(){
+        if (Platform.getInstance().isMW()){
+            driver.get("https://en.m.wikipedia.org/");
+            driver.manage().window().maximize();
+        } else System.out.println("openWikiWebPageForMobileWeb method does noting for mobile platform " +
+                Platform.getInstance().getPlatformVar());
     }
 
 

@@ -7,9 +7,8 @@ import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
 import lib.Platform;
 import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
@@ -19,9 +18,9 @@ import java.util.regex.Pattern;
 import static org.hamcrest.CoreMatchers.containsString;
 
 public class MainPageObject {
-    protected AppiumDriver driver;
+    protected RemoteWebDriver driver;
 
-    public MainPageObject(AppiumDriver driver){
+    public MainPageObject(RemoteWebDriver driver){
         this.driver = driver;
     }
 
@@ -85,25 +84,27 @@ public class MainPageObject {
     }
 
     public void swipeUp(int timeOfSwipe){
-        //TouchAction action = new TouchAction(driver);
-        TouchAction action = new TouchAction(driver);
+        if (driver instanceof AppiumDriver) {
+            TouchAction action = new TouchAction((AppiumDriver) driver);
 
-        //селениумовским классом получаем размер экрана нашего моб девайса, чтобы потом вычислять относительные координаты для press и других действий
-        Dimension size = driver.manage().window().getSize();
-        //х - точка посередине по оси х девайса
-        int x = size.width / 2;
-        //точка внизу 80% экрана девайса - откуда начнем свайп
-        int start_y = (int) (size.height * 0.85);
-        //точка внизу 20% экрана девайса - где закончим свайп
-        int end_y = (int) (size.height * 0.2);
+            //селениумовским классом получаем размер экрана нашего моб девайса, чтобы потом вычислять относительные координаты для press и других действий
+            Dimension size = driver.manage().window().getSize();
+            //х - точка посередине по оси х девайса
+            int x = size.width / 2;
+            //точка внизу 80% экрана девайса - откуда начнем свайп
+            int start_y = (int) (size.height * 0.85);
+            //точка внизу 20% экрана девайса - где закончим свайп
+            int end_y = (int) (size.height * 0.2);
 
-        //нажимаем в точке начала свайпа, ждем таймаут (который передали в метод), перемещаем в точку завершения свайпа, выполняем
-        action.
-                press(PointOption.point(x, start_y)).
-                waitAction(WaitOptions.waitOptions(Duration.ofMillis(timeOfSwipe))).
-                moveTo(PointOption.point(x, end_y)).
-                release().
-                perform();
+            //нажимаем в точке начала свайпа, ждем таймаут (который передали в метод), перемещаем в точку завершения свайпа, выполняем
+            action.
+                    press(PointOption.point(x, start_y)).
+                    waitAction(WaitOptions.waitOptions(Duration.ofMillis(timeOfSwipe))).
+                    moveTo(PointOption.point(x, end_y)).
+                    release().
+                    perform();
+        } else System.out.println("SwipeUp method does noting for platform " +
+                Platform.getInstance().getPlatformVar());
 
     }
 
@@ -125,34 +126,43 @@ public class MainPageObject {
     }
 
     public void swipeElementToLeft(String locator, String error_message){
-        WebElement element = waitForElementPresent(locator, error_message, 10);
+        if (driver instanceof AppiumDriver) {
+            WebElement element = waitForElementPresent(locator, error_message, 10);
 
-        //находим самую левую точку элемента, который собираемся свайпать
-        int left_x = element.getLocation().getX();
-        //находим самую правую точку элемента
-        int right_x = left_x + element.getSize().getWidth();
+            //находим самую левую точку элемента, который собираемся свайпать
+            int left_x = element.getLocation().getX();
+            //находим самую правую точку элемента
+            int right_x = left_x + element.getSize().getWidth();
 
-        int upper_y = element.getLocation().getY();
-        int bottom_y = upper_y + element.getSize().getHeight();
-        int middle_y = (upper_y + bottom_y) / 2;
+            int upper_y = element.getLocation().getY();
+            int bottom_y = upper_y + element.getSize().getHeight();
+            int middle_y = (upper_y + bottom_y) / 2;
 
-        TouchAction action = new TouchAction(driver);
+            TouchAction action = new TouchAction((AppiumDriver) driver);
 
-        action.press(PointOption.point(right_x, middle_y));
-        action.waitAction(WaitOptions.waitOptions(Duration.ofMillis(300)));
-        if (Platform.getInstance().isAndroid()) {
-            action.moveTo(PointOption.point(left_x, middle_y));
-        } else {
-            int offset_x = (-1*element.getSize().getWidth()); //самая левая точка элемента
-            action.moveTo(PointOption.point(offset_x, middle_y ));
-        }
-        action.release();
-        action.perform();
+            action.press(PointOption.point(right_x, middle_y));
+            action.waitAction(WaitOptions.waitOptions(Duration.ofMillis(300)));
+            if (Platform.getInstance().isAndroid()) {
+                action.moveTo(PointOption.point(left_x, middle_y));
+            } else {
+                int offset_x = (-1 * element.getSize().getWidth()); //самая левая точка элемента
+                action.moveTo(PointOption.point(offset_x, middle_y));
+            }
+            action.release();
+            action.perform();
+        } else System.out.println("SwipeLeft method does noting for platform " +
+                Platform.getInstance().getPlatformVar());
     }
 
 
     public boolean isElementLocatedOnTheScreen(String locator){
         int element_location_by_y = this.waitForElementPresent(locator, "Cannot find element by locator", 10).getLocation().getY();
+       // определяем положение y, с учетом того, что на веб-странице location отсчитвается от верха страницы
+        if (Platform.getInstance().isMW()){
+            JavascriptExecutor JSExecutor = (JavascriptExecutor) driver;
+            Object js_result = JSExecutor.executeScript("return window.pageYOffset");
+            element_location_by_y -= Integer.parseInt(js_result.toString());
+        }
         int screen_size_by_window = driver.manage().window().getSize().getHeight();
         return element_location_by_y < screen_size_by_window;
     }
@@ -168,10 +178,53 @@ public class MainPageObject {
         }
     }
 
+    public void scrollWebPageUp(){
+        if (Platform.getInstance().isMW()) {
+            JavascriptExecutor JSExecutor = (JavascriptExecutor) driver;
+            JSExecutor.executeScript("window.scrollBy(0,250)");
+        } else {
+            System.out.println("scrollWebPageUp method does noting for mobile platform " +
+                    Platform.getInstance().getPlatformVar());
+        }
+    }
+
+    public void scrollWebPageTillElementNotVisible(String locator, String error_message, int max_swipes){
+        int already_swiped = 0;
+        WebElement element = this.waitForElementPresent(locator, error_message);
+        while(!this.isElementLocatedOnTheScreen(locator)){
+            scrollWebPageUp();
+            ++already_swiped;
+            if (already_swiped > max_swipes) {
+                Assert.assertTrue(error_message, element.isDisplayed());
+            }
+        }
+    }
+
     public int getAmountOfElements(String locator){
         By by = this.getLocatorByString(locator);
         List elements = driver.findElements(by);
         return elements.size();
+    }
+
+    public boolean isElementPresent(String locator){
+        return getAmountOfElements(locator) > 0;
+    }
+
+    public void tryClickElementWithFewAttempts(String locator, String error_message, int amount_of_attempts){
+        int current_attempts = 0;
+        boolean need_more_attemps = true;
+
+        while(need_more_attemps){
+            try  {
+                this.waitForElementAndClick(locator, error_message, 1);
+                need_more_attemps = false;
+            } catch (Exception e) {
+                if (current_attempts > amount_of_attempts) {
+                    this.waitForElementAndClick(locator, error_message, 1);
+                }
+            }
+            ++current_attempts;
+        }
 
     }
 
@@ -198,8 +251,12 @@ public class MainPageObject {
             { return By.xpath(locator);}
         else if (by_type.equals("id"))
             { return By.id(locator);}
-        else if (by_type.equals("-ios class chain")) {return MobileBy.iOSClassChain(locator);}
+        else if (by_type.equals("-ios class chain"))
+            {return MobileBy.iOSClassChain(locator);}
+        else if (by_type.equals("css"))
+            { return By.cssSelector(locator);}
         else {throw new IllegalArgumentException("Cannot get type of locator. Locator = " + locator_with_type);}
-
     }
+
+
 }

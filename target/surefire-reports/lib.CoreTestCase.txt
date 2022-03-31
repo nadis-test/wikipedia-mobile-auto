@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: lib.CoreTestCase
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in lib.CoreTestCase
-warning(junit.framework.TestSuite$1)  Time elapsed: 0 s  <<< FAILURE!
-junit.framework.AssertionFailedError: No tests found in lib.CoreTestCase
-	at junit.framework.TestSuite$1.runTest(TestSuite.java:97)
-

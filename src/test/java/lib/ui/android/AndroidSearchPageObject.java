@@ -2,6 +2,7 @@ package lib.ui.android;
 
 import io.appium.java_client.AppiumDriver;
 import lib.ui.SearchPageObject;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class AndroidSearchPageObject extends SearchPageObject {
     static {
@@ -15,7 +16,7 @@ public class AndroidSearchPageObject extends SearchPageObject {
                 EMPTY_RESULT_ELEMENT = "xpath://*[@resource-id = 'org.wikipedia:id/results_text'][@text = 'No results']";
                 SEARCH_RESULT_ELEMENT_BY_INSTANCE_TPL = "xpath://*[@class='android.view.ViewGroup'][@instance = {INSTANCE_NUMBER}]//descendant::android.widget.TextView[@resource-id = 'org.wikipedia:id/page_list_item_title']";
     }
-    public AndroidSearchPageObject(AppiumDriver driver){
+    public AndroidSearchPageObject(RemoteWebDriver driver){
         super(driver);
     }
 

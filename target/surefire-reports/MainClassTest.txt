@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: MainClassTest
--------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.004 s <<< FAILURE! - in MainClassTest
-testGetClasslNumber(MainClassTest)  Time elapsed: 0.001 s  <<< FAILURE!
-java.lang.AssertionError: Class number value20 <= expected value 45
-	at MainClassTest.testGetClasslNumber(MainClassTest.java:29)
-

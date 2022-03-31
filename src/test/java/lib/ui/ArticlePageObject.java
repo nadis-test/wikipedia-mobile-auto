@@ -3,6 +3,7 @@ package lib.ui;
 import io.appium.java_client.AppiumDriver;
 import lib.Platform;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 abstract public class ArticlePageObject extends MainPageObject {
     protected static String
@@ -10,6 +11,7 @@ abstract public class ArticlePageObject extends MainPageObject {
         FOOTER_ELEMENT,
         SAVE_TO_MY_LIST_BUTTON,
         OPTIONS_ADD_TO_MY_LIST_BUTTON,
+        OPTIONS_REMOVE_FROM_MY_LIST_BUTTON,
         NEW_LIST_NAME_INPUT,
         MY_LIST_OK_BUTTON,
         EXISTING_LIST_TITLE_TPL,
@@ -21,7 +23,7 @@ abstract public class ArticlePageObject extends MainPageObject {
     }
     // template methods
 
-    public ArticlePageObject(AppiumDriver driver){
+    public ArticlePageObject(RemoteWebDriver driver){
         super(driver);
     }
 
@@ -33,7 +35,10 @@ abstract public class ArticlePageObject extends MainPageObject {
         WebElement title_element = waitForTitleElement();
         if (Platform.getInstance().isAndroid()) {
             return title_element.getAttribute("text");
-        } else { return title_element.getAttribute("label"); }
+        } else if (Platform.getInstance().isIOS())
+            { return title_element.getAttribute("label"); }
+        else {
+            return title_element.getText();}
     }
 
     public void swipeToFooter(){
@@ -41,7 +46,11 @@ abstract public class ArticlePageObject extends MainPageObject {
         if (Platform.getInstance().isAndroid()){
         this.swipeUpToFindElement(FOOTER_ELEMENT,
                 "Cannot find footer element on the end of the page", 40);
-        } else this.swipeUpTillElementAppears(FOOTER_ELEMENT, "Cannot find footer element on the end of the page",40);
+        } else if ((Platform.getInstance().isIOS())) {
+            this.swipeUpTillElementAppears(FOOTER_ELEMENT, "Cannot find footer element on the end of the page", 40);
+        } else {
+            this.scrollWebPageTillElementNotVisible(FOOTER_ELEMENT, "Cannot find footer element on the end of the page", 40);
+        }
     }
 
     public void addArticleToNewList(String name_of_folder){
@@ -84,10 +93,13 @@ abstract public class ArticlePageObject extends MainPageObject {
     }
 
     public void closeArticle(){
-        //возвращаюсь со страницы статьи на страницу результатов поиска
-        this.waitForElementAndClick(CLOSE_ARTICLE_BUTTON,
-                "'Navigate up' from article to search results page not found on toolbar",
-                5);
+        //return from article page to search results page
+        if (Platform.getInstance().isIOS() || Platform.getInstance().isAndroid()) {
+            this.waitForElementAndClick(CLOSE_ARTICLE_BUTTON,
+                    "'Navigate up' from article to search results page not found on toolbar",
+                    5);
+        } else {System.out.println("closeArticle method does noting for mobile platform " +
+                Platform.getInstance().getPlatformVar());}
     }
 
     public void assertArticleHasTitle(){
@@ -97,6 +109,19 @@ abstract public class ArticlePageObject extends MainPageObject {
     }
 
     public void addArticlesToMySaved(){
-        this.waitForElementAndClick(SAVE_TO_MY_LIST_BUTTON, "Save button not found", 5);
+        if (Platform.getInstance().isMW()){
+            this.removeArticleFromSavedIfItWasAdded();
+            System.out.println("addArticlesToMySaved + removeArticleFromSavedIfItWasAdded");
+        }
+        this.waitForElementAndClick(SAVE_TO_MY_LIST_BUTTON, "Save button not found", 15);
+    }
+
+    public void removeArticleFromSavedIfItWasAdded(){
+        if (this.isElementPresent(OPTIONS_REMOVE_FROM_MY_LIST_BUTTON)){
+            this.waitForElementAndClick(OPTIONS_REMOVE_FROM_MY_LIST_BUTTON,
+                    "Cannot click on 'Remove from Saved' button", 1);
+            this.waitForElementPresent(OPTIONS_ADD_TO_MY_LIST_BUTTON,
+                    "Cannot find 'Add to Saved' button after removing article from Saved", 1);
+        }
     }
 }

@@ -1,8 +1,7 @@
 lib/ui/factories/WelcomePageObjectFactory.class
-tests/ArticleTests.class
-suites/TestSuite.class
+suite/TestSuite.class
+test/GetStartedTest.class
 lib/ui/NavigationUI.class
-tests/SearchTests.class
 lib/ui/android/AndroidWelcomePageObject.class
 lib/ui/ArticlePageObject.class
 lib/ui/SearchPageObject.class
@@ -12,8 +11,6 @@ lib/ui/ios/IOSMyListPageObject.class
 lib/ui/android/AndroidArticlePageObject.class
 lib/ui/android/AndroidSearchPageObject.class
 lib/ui/MyListsPageObject.class
-MainClassTest.class
-suites.class
 lib/Platform.class
 lib/ui/ios/IOSWelcomePageObject.class
 lib/ui/factories/SearchPageObjectFactory.class
@@ -21,12 +18,12 @@ lib/ui/ios/IOSNavigationUI.class
 lib/ui/android/AndroidNavigationUI.class
 lib/ui/factories/ArticlePageObjectFactory.class
 lib/ui/factories/MyListPageObjectFactory.class
-MainClass.class
+test/SearchTest.class
 lib/ui/ios/IOSSearchPageObject.class
-tests/GetStartedTest.class
-tests/ChangeAppConditionTests.class
-tests/MyListsTests.class
+test/ChangeAppConditionTest.class
 lib/ui/ios/IOSArticlePageObject.class
 lib/CoreTestCase.class
+test/MyListsTest.class
 lib/ui/MainPageObject.class
 lib/ui/factories/NavigationUIFactory.class
+test/ArticleTest.class
