@@ -1,7 +1,6 @@
 package test;
 
-import io.qameta.allure.Description;
-import io.qameta.allure.Step;
+import io.qameta.allure.*;
 import io.qameta.allure.junit4.DisplayName;
 import lib.CoreTestCase;
 import lib.ui.ArticlePageObject;
@@ -11,11 +10,14 @@ import lib.ui.factories.SearchPageObjectFactory;
 import org.junit.Assert;
 import org.junit.Test;
 
+@Epic("Tests for articles")
 public class ArticleTest extends CoreTestCase {
     @Test
+    @Features(value = {@Feature(value = "Search"), @Feature(value = "Article")})
     @DisplayName("Compare article title with expected one")
     @Description("Open Wiki; Check search input; Enter search query and perform search; Check that article with description that corresponds expected is present on the search result page")
     @Step("Starting testCompareArticleTitle")
+    @Severity(value = SeverityLevel.BLOCKER)
     public void testCompareArticleTitle() {
         SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
         SearchPageObject.initSearchInput();
@@ -33,9 +35,11 @@ public class ArticleTest extends CoreTestCase {
     }
 
     @Test
+    @Features(value = {@Feature(value = "Search"), @Feature(value = "Article")})
     @DisplayName("Swipe article to the footer")
     @Description("Open Wiki; Check search input; Enter search query and perform search; Click on the article title and open article page; Swipe/scroll article page until footer element becomes visible")
     @Step("Starting testSwipeArticle")
+    @Severity(value = SeverityLevel.MINOR)
     public void testSwipeArticle(){
         SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
 
