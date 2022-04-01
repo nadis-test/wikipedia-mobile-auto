@@ -92,8 +92,17 @@ public class MyListsTest extends CoreTestCase {
         ArticlePageObject ArticlePageObject = ArticlePageObjectFactory.get(driver);;
         if (Platform.getInstance().isAndroid()) {
             ArticlePageObject.addArticleToNewList(FOLDER_NAME);
-        } else {
+        } else  {
             ArticlePageObject.addArticlesToMySaved();
+        }
+        if (Platform.getInstance().isMW()){
+            AuthorizationPageObject Auth = new AuthorizationPageObject(driver);
+            Auth.clickAuthButton();
+            Auth.enterLoginData(login, password);
+            Auth.submitForm();
+            //wait for redirect from authorization form
+            ArticlePageObject.waitForTitleElement();
+            Assert.assertEquals("We are not on the same page after login", article_title_1, ArticlePageObject.getArticleTitle());
         }
         ArticlePageObject.closeArticle();
 
@@ -107,13 +116,20 @@ public class MyListsTest extends CoreTestCase {
         ArticlePageObject.closeArticle();
 
         NavigationUI NavigationUI = NavigationUIFactory.get(driver);
-        NavigationUI.returnFromSearchResultsToMainPage();
+        if (Platform.getInstance().isAndroid() || Platform.getInstance().isIOS()) {
+            NavigationUI.returnFromSearchResultsToMainPage();
+        } else {
+            NavigationUI.openNavigation();
+        }
+
         NavigationUI.clickSavedLists();
 
         MyListsPageObject MyListsPageObject = MyListPageObjectFactory.get(driver);
         if (Platform.getInstance().isAndroid()) {
             MyListsPageObject.openFolderByName(FOLDER_NAME);
-        } else {MyListsPageObject.closeSyncOverlay();}
+        } else if (Platform.getInstance().isIOS()) {
+            MyListsPageObject.closeSyncOverlay();
+        }
         MyListsPageObject.waitForArticleToAppearByTitle(article_title_1);
         MyListsPageObject.waitForArticleToAppearByTitle(article_title_2);
         MyListsPageObject.swipeArticleToDelete(article_title_1);
