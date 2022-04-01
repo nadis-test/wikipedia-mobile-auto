@@ -14,7 +14,7 @@ public class AndroidSearchPageObject extends SearchPageObject {
                 SEARCH_CANCEL_BUTTON = "id:org.wikipedia:id/search_close_btn";
                 SEARCH_RESULT_ELEMENT = "xpath://*[@resource-id='org.wikipedia:id/search_results_list']//*[@resource-id='org.wikipedia:id/page_list_item_title']";
                 EMPTY_RESULT_ELEMENT = "xpath://*[@resource-id = 'org.wikipedia:id/results_text'][@text = 'No results']";
-                SEARCH_RESULT_ELEMENT_BY_INSTANCE_TPL = "xpath://*[@class='android.view.ViewGroup'][@instance = {INSTANCE_NUMBER}]//descendant::android.widget.TextView[@resource-id = 'org.wikipedia:id/page_list_item_title']";
+                SEARCH_RESULT_ELEMENT_BY_INSTANCE_TPL = "xpath://*[@class='android.view.ViewGroup'][@index = {INSTANCE_NUMBER}]//descendant::android.widget.TextView[@resource-id = 'org.wikipedia:id/page_list_item_title']";
     }
     public AndroidSearchPageObject(RemoteWebDriver driver){
         super(driver);

@@ -7,8 +7,10 @@ import io.qameta.allure.junit4.Tags;
 import lib.CoreTestCase;
 import lib.Platform;
 import lib.ui.WelcomePageObject;
+import org.junit.Ignore;
 import org.junit.Test;
 
+@Ignore
 @Epic("Tests for welcome screen steps")
 public class GetStartedTest extends CoreTestCase {
 

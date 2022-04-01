@@ -97,7 +97,7 @@ public class MyListsTest extends CoreTestCase {
         String article_title_2 = "Memento mori";
         SearchPageObject.clickByArticleWithTitle(article_title_2);
         if (Platform.getInstance().isAndroid()) {
-            ArticlePageObject.addArticleToNewList(FOLDER_NAME);
+            ArticlePageObject.addArticleToExistingList(FOLDER_NAME);
         } else {
             ArticlePageObject.addArticlesToMySaved();
         }

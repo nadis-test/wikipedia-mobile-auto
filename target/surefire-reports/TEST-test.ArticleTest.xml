@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="test.ArticleTest" time="27.751" tests="3" errors="2" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="test.ArticleTest" time="41.956" tests="3" errors="1" skipped="0" failures="0">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -17,9 +17,8 @@
     <property name="user.country" value="RU"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib"/>
-    <property name="sun.java.command" value="/Users/n.porotkova/GitHub/JavaAppiumMaven/target/surefire/surefirebooter8017671744217434103.jar /Users/n.porotkova/GitHub/JavaAppiumMaven/target/surefire 2022-03-31T22-39-13_674-jvmRun1 surefire3291553406920855749tmp surefire_07542114747997368632tmp"/>
+    <property name="sun.java.command" value="/Users/n.porotkova/GitHub/JavaAppiumMaven/target/surefire/surefirebooter2824130273508403317.jar /Users/n.porotkova/GitHub/JavaAppiumMaven/target/surefire 2022-04-01T14-08-23_770-jvmRun1 surefire281761462782755255tmp surefire_08702974606586845856tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="test" value="ArticleTest"/>
     <property name="surefire.test.class.path" value="/Users/n.porotkova/GitHub/JavaAppiumMaven/target/test-classes:/Users/n.porotkova/GitHub/JavaAppiumMaven/target/classes:/Users/n.porotkova/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/n.porotkova/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/n.porotkova/.m2/repository/io/appium/java-client/6.1.0/java-client-6.1.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-java/3.12.0/selenium-java-3.12.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.12.0/selenium-chrome-driver-3.12.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.12.0/selenium-edge-driver-3.12.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.12.0/selenium-firefox-driver-3.12.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.12.0/selenium-ie-driver-3.12.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.12.0/selenium-opera-driver-3.12.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.12.0/selenium-remote-driver-3.12.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.12.0/selenium-safari-driver-3.12.0.jar:/Users/n.porotkova/.m2/repository/net/bytebuddy/byte-buddy/1.8.3/byte-buddy-1.8.3.jar:/Users/n.porotkova/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/n.porotkova/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/n.porotkova/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/n.porotkova/.m2/repository/com/google/guava/guava/23.6-jre/guava-23.6-jre.jar:/Users/n.porotkova/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/n.porotkova/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/n.porotkova/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/n.porotkova/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/n.porotkova/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/n.porotkova/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/Users/n.porotkova/.m2/repository/com/squareup/okhttp3/okhttp/3.9.1/okhttp-3.9.1.jar:/Users/n.porotkova/.m2/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-support/3.12.0/selenium-support-3.12.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-api/3.12.0/selenium-api-3.12.0.jar:/Users/n.porotkova/.m2/repository/com/google/code/gson/gson/2.8.4/gson-2.8.4.jar:/Users/n.porotkova/.m2/repository/org/apache/httpcomponents/httpclient/4.5.5/httpclient-4.5.5.jar:/Users/n.porotkova/.m2/repository/cglib/cglib/3.2.6/cglib-3.2.6.jar:/Users/n.porotkova/.m2/repository/org/ow2/asm/asm/6.0/asm-6.0.jar:/Users/n.porotkova/.m2/repository/org/apache/ant/ant/1.9.6/ant-1.9.6.jar:/Users/n.porotkova/.m2/repository/org/apache/ant/ant-launcher/1.9.6/ant-launcher-1.9.6.jar:/Users/n.porotkova/.m2/repository/commons-validator/commons-validator/1.6/commons-validator-1.6.jar:/Users/n.porotkova/.m2/repository/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar:/Users/n.porotkova/.m2/repository/commons-digester/commons-digester/1.8.1/commons-digester-1.8.1.jar:/Users/n.porotkova/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/n.porotkova/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/Users/n.porotkova/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/n.porotkova/.m2/repository/org/springframework/spring-context/5.0.5.RELEASE/spring-context-5.0.5.RELEASE.jar:/Users/n.porotkova/.m2/repository/org/springframework/spring-aop/5.0.5.RELEASE/spring-aop-5.0.5.RELEASE.jar:/Users/n.porotkova/.m2/repository/org/springframework/spring-beans/5.0.5.RELEASE/spring-beans-5.0.5.RELEASE.jar:/Users/n.porotkova/.m2/repository/org/springframework/spring-core/5.0.5.RELEASE/spring-core-5.0.5.RELEASE.jar:/Users/n.porotkova/.m2/repository/org/springframework/spring-jcl/5.0.5.RELEASE/spring-jcl-5.0.5.RELEASE.jar:/Users/n.porotkova/.m2/repository/org/springframework/spring-expression/5.0.5.RELEASE/spring-expression-5.0.5.RELEASE.jar:/Users/n.porotkova/.m2/repository/org/openpnp/opencv/3.2.0-1/opencv-3.2.0-1.jar:/Users/n.porotkova/.m2/repository/io/qameta/allure/allure-junit4/2.8.1/allure-junit4-2.8.1.jar:/Users/n.porotkova/.m2/repository/io/qameta/allure/allure-java-commons/2.8.1/allure-java-commons-2.8.1.jar:/Users/n.porotkova/.m2/repository/io/qameta/allure/allure-model/2.8.1/allure-model-2.8.1.jar:/Users/n.porotkova/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.7/jackson-databind-2.9.7.jar:/Users/n.porotkova/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar:/Users/n.porotkova/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.7/jackson-core-2.9.7.jar:/Users/n.porotkova/.m2/repository/org/apache/tika/tika-core/1.19.1/tika-core-1.19.1.jar:/Users/n.porotkova/.m2/repository/org/aspectj/aspectjrt/1.9.1/aspectjrt-1.9.1.jar:/Users/n.porotkova/.m2/repository/org/jooq/joor-java-8/0.9.9/joor-java-8-0.9.9.jar:/Users/n.porotkova/.m2/repository/org/aspectj/aspectjweaver/1.9.5/aspectjweaver-1.9.5.jar:/Users/n.porotkova/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/n.porotkova/.m2/repository/org/slf4j/slf4j-log4j12/1.7.30/slf4j-log4j12-1.7.30.jar:/Users/n.porotkova/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="allure.results.directory" value="/Users/n.porotkova/GitHub/JavaAppiumMaven/target/allure-results"/>
@@ -33,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/n.porotkova/GitHub/JavaAppiumMaven/target/surefire/surefirebooter8017671744217434103.jar:/Users/n.porotkova/.m2/repository/org/aspectj/aspectjweaver/1.9.5/aspectjweaver-1.9.5.jar"/>
+    <property name="surefire.real.class.path" value="/Users/n.porotkova/GitHub/JavaAppiumMaven/target/surefire/surefirebooter2824130273508403317.jar:/Users/n.porotkova/.m2/repository/org/aspectj/aspectjweaver/1.9.5/aspectjweaver-1.9.5.jar"/>
     <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/classes"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
@@ -63,82 +62,25 @@
     <property name="java.class.version" value="52.0"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="testArticleHasTitleElement" classname="test.ArticleTest" time="13.676">
-    <error message="Expected condition failed: Cannot find and click search result with substring + &apos;bject-oriented programming language&apos;&#10; (tried for 10 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
-Expected condition failed: Cannot find and click search result with substring + 'bject-oriented programming language'
- (tried for 10 second(s) with 500 milliseconds interval)
-	at test.ArticleTest.testArticleHasTitleElement(ArticleTest.java:63)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-Cannot locate an element using By.xpath: //a[contains(@class, 'title')][contains(data-title,'bject-oriented programming language')]
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+  <testcase name="testArticleHasTitleElement" classname="test.ArticleTest" time="13.032"/>
+  <testcase name="testCompareArticleTitle" classname="test.ArticleTest" time="11.901">
+    <error message="Cached elements &apos;By.xpath: //*[@text=&apos;Java (programming language)&apos;]&apos; do not exist in DOM anymore&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;k-1927&apos;, ip: &apos;fe80:0:0:0:c53:5b91:dabb:6a40%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_282&apos;&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Capabilities {app: /Users/n.porotkova/GitHub/a..., appActivity: .main.MainActivity, appPackage: org.wikipedia, automationName: Appium, databaseEnabled: false, desired: {app: /Users/n.porotkova/GitHub/a..., appActivity: .main.MainActivity, appPackage: org.wikipedia, automationName: Appium, deviceName: emulator-5554, orientation: PORTRAIT, platformName: android, platformVersion: 10}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, orientation: PORTRAIT, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 63, takesScreenshot: true, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}&#10;Session ID: fa60f97d-9077-4803-b02a-da3bc006c6bf" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: 
+Cached elements 'By.xpath: //*[@text='Java (programming language)']' do not exist in DOM anymore
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
 System info: host: 'k-1927', ip: 'fe80:0:0:0:c53:5b91:dabb:6a40%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_282'
-Driver info: driver.version: unknown
-	at test.ArticleTest.testArticleHasTitleElement(ArticleTest.java:63)
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/n.porotkova/GitHub/a..., appActivity: .main.MainActivity, appPackage: org.wikipedia, automationName: Appium, databaseEnabled: false, desired: {app: /Users/n.porotkova/GitHub/a..., appActivity: .main.MainActivity, appPackage: org.wikipedia, automationName: Appium, deviceName: emulator-5554, orientation: PORTRAIT, platformName: android, platformVersion: 10}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, orientation: PORTRAIT, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 63, takesScreenshot: true, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: fa60f97d-9077-4803-b02a-da3bc006c6bf
+	at test.ArticleTest.testCompareArticleTitle_aroundBody0(ArticleTest.java:31)
+	at test.ArticleTest.testCompareArticleTitle(ArticleTest.java:25)
 </error>
-    <system-out><![CDATA[RotateScreenPortrait method does noting for platform mobile_web
-SkipWelcomePage method does noting for platform mobile_web
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 99.0.4844.17 (395f87df02eedda1d0e06d5ac0614b0eeb22a9e8-refs/branch-heads/4844@{#182}) on port 40366
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-[1648755556.725][WARNING]: This version of ChromeDriver has not been tested with Chrome version 100.
-мар 31, 2022 10:39:16 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="testCompareArticleTitle" classname="test.ArticleTest" time="4.327">
-    <failure message="Unexpected title on the article page expected:&lt;[Object-oriented programming language]&gt; but was:&lt;[Java (programming language)]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: Unexpected title on the article page expected:<[Object-oriented programming language]> but was:<[Java (programming language)]>
-	at test.ArticleTest.testCompareArticleTitle_aroundBody0(ArticleTest.java:30)
-	at test.ArticleTest.testCompareArticleTitle(ArticleTest.java:22)
-]]></failure>
-    <system-out><![CDATA[RotateScreenPortrait method does noting for platform mobile_web
-SkipWelcomePage method does noting for platform mobile_web
+    <system-out><![CDATA[openWikiWebPageForMobileWeb method does noting for mobile platform android
 The screenshot was taken: /Users/n.porotkova/GitHub/JavaAppiumMaven/article_title_screenshot.png
-Java (programming language)
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 99.0.4844.17 (395f87df02eedda1d0e06d5ac0614b0eeb22a9e8-refs/branch-heads/4844@{#182}) on port 7633
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-[1648755569.758][WARNING]: This version of ChromeDriver has not been tested with Chrome version 100.
-мар 31, 2022 10:39:29 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+    <system-err><![CDATA[апр 01, 2022 2:08:43 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="testSwipeArticle" classname="test.ArticleTest" time="9.615">
-    <error message="Expected condition failed: Cannot find footer element on the end of the page&#10; (tried for 5 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
-Expected condition failed: Cannot find footer element on the end of the page
- (tried for 5 second(s) with 500 milliseconds interval)
-	at test.ArticleTest.testSwipeArticle_aroundBody2(ArticleTest.java:53)
-	at test.ArticleTest.testSwipeArticle(ArticleTest.java:44)
-Caused by: org.openqa.selenium.InvalidSelectorException: 
-invalid selector: Unable to locate an element with the xpath expression css:footer because of the following error:
-NamespaceError: Failed to execute 'evaluate' on 'Document': The string 'css:footer' contains unresolvable namespaces.
-  (Session info: chrome=100.0.4896.60)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'k-1927', ip: 'fe80:0:0:0:c53:5b91:dabb:6a40%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_282'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 99.0.4844.17 (395f87df02eed..., userDataDir: /var/folders/04/46skk9bs6hz...}, goog:chromeOptions: {debuggerAddress: localhost:65194}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: cf761a38b73ce3166b359625854df2b5
-*** Element info: {Using=xpath, value=css:footer}
-	at test.ArticleTest.testSwipeArticle_aroundBody2(ArticleTest.java:53)
-	at test.ArticleTest.testSwipeArticle(ArticleTest.java:44)
-</error>
-    <system-out><![CDATA[RotateScreenPortrait method does noting for platform mobile_web
-SkipWelcomePage method does noting for platform mobile_web
-The screenshot was taken: /Users/n.porotkova/GitHub/JavaAppiumMaven/article_title_screenshot.png
-swipeToFooter()
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 99.0.4844.17 (395f87df02eedda1d0e06d5ac0614b0eeb22a9e8-refs/branch-heads/4844@{#182}) on port 1757
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-[1648755574.130][WARNING]: This version of ChromeDriver has not been tested with Chrome version 100.
-мар 31, 2022 10:39:34 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
+  <testcase name="testSwipeArticle" classname="test.ArticleTest" time="16.891"/>
 </testsuite>

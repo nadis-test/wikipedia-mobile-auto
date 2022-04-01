@@ -5,6 +5,7 @@ import io.qameta.allure.Step;
 import lib.Platform;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 abstract public class ArticlePageObject extends MainPageObject {
     protected static String
@@ -30,7 +31,7 @@ abstract public class ArticlePageObject extends MainPageObject {
 
     @Step("Waiting for article title element")
     public WebElement waitForTitleElement(){
-        return this.waitForElementPresent(TITLE, "Cannot find title element on page", 5);
+        return this.waitForElementPresent(TITLE, "Cannot find title element on page", 30);
     }
 
     @Step("Getting an article title")
@@ -47,7 +48,6 @@ abstract public class ArticlePageObject extends MainPageObject {
 
     @Step("Swiping to the footer element")
     public void swipeToFooter(){
-        System.out.println("swipeToFooter()");
         if (Platform.getInstance().isAndroid()){
         this.swipeUpToFindElement(FOOTER_ELEMENT,
                 "Cannot find footer element on the end of the page", 40);

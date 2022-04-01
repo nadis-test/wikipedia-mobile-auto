@@ -1,42 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: test.ArticleTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 2, Skipped: 0, Time elapsed: 27.751 s <<< FAILURE! - in test.ArticleTest
-testArticleHasTitleElement(test.ArticleTest)  Time elapsed: 13.676 s  <<< ERROR!
-org.openqa.selenium.TimeoutException: 
-Expected condition failed: Cannot find and click search result with substring + 'bject-oriented programming language'
- (tried for 10 second(s) with 500 milliseconds interval)
-	at test.ArticleTest.testArticleHasTitleElement(ArticleTest.java:63)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-Cannot locate an element using By.xpath: //a[contains(@class, 'title')][contains(data-title,'bject-oriented programming language')]
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 41.956 s <<< FAILURE! - in test.ArticleTest
+testCompareArticleTitle(test.ArticleTest)  Time elapsed: 11.901 s  <<< ERROR!
+org.openqa.selenium.StaleElementReferenceException: 
+Cached elements 'By.xpath: //*[@text='Java (programming language)']' do not exist in DOM anymore
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
 System info: host: 'k-1927', ip: 'fe80:0:0:0:c53:5b91:dabb:6a40%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_282'
-Driver info: driver.version: unknown
-	at test.ArticleTest.testArticleHasTitleElement(ArticleTest.java:63)
-
-testCompareArticleTitle(test.ArticleTest)  Time elapsed: 4.327 s  <<< FAILURE!
-org.junit.ComparisonFailure: Unexpected title on the article page expected:<[Object-oriented programming language]> but was:<[Java (programming language)]>
-	at test.ArticleTest.testCompareArticleTitle_aroundBody0(ArticleTest.java:30)
-	at test.ArticleTest.testCompareArticleTitle(ArticleTest.java:22)
-
-testSwipeArticle(test.ArticleTest)  Time elapsed: 9.615 s  <<< ERROR!
-org.openqa.selenium.TimeoutException: 
-Expected condition failed: Cannot find footer element on the end of the page
- (tried for 5 second(s) with 500 milliseconds interval)
-	at test.ArticleTest.testSwipeArticle_aroundBody2(ArticleTest.java:53)
-	at test.ArticleTest.testSwipeArticle(ArticleTest.java:44)
-Caused by: org.openqa.selenium.InvalidSelectorException: 
-invalid selector: Unable to locate an element with the xpath expression css:footer because of the following error:
-NamespaceError: Failed to execute 'evaluate' on 'Document': The string 'css:footer' contains unresolvable namespaces.
-  (Session info: chrome=100.0.4896.60)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'k-1927', ip: 'fe80:0:0:0:c53:5b91:dabb:6a40%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_282'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 99.0.4844.17 (395f87df02eed..., userDataDir: /var/folders/04/46skk9bs6hz...}, goog:chromeOptions: {debuggerAddress: localhost:65194}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: cf761a38b73ce3166b359625854df2b5
-*** Element info: {Using=xpath, value=css:footer}
-	at test.ArticleTest.testSwipeArticle_aroundBody2(ArticleTest.java:53)
-	at test.ArticleTest.testSwipeArticle(ArticleTest.java:44)
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/n.porotkova/GitHub/a..., appActivity: .main.MainActivity, appPackage: org.wikipedia, automationName: Appium, databaseEnabled: false, desired: {app: /Users/n.porotkova/GitHub/a..., appActivity: .main.MainActivity, appPackage: org.wikipedia, automationName: Appium, deviceName: emulator-5554, orientation: PORTRAIT, platformName: android, platformVersion: 10}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, orientation: PORTRAIT, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 63, takesScreenshot: true, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: fa60f97d-9077-4803-b02a-da3bc006c6bf
+	at test.ArticleTest.testCompareArticleTitle_aroundBody0(ArticleTest.java:31)
+	at test.ArticleTest.testCompareArticleTitle(ArticleTest.java:25)
 

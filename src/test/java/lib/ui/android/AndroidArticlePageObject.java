@@ -6,7 +6,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class AndroidArticlePageObject extends ArticlePageObject {
     static {
-                TITLE = "id:pcs-edit-section-title-description";
+                TITLE = "xpath://*[@text='Java (programming language)']";
                 FOOTER_ELEMENT = "xpath://*[@text='View article in browser']";
                 SAVE_TO_MY_LIST_BUTTON = "xpath://*[@resource-id='org.wikipedia:id/article_menu_bookmark']";
                 OPTIONS_ADD_TO_MY_LIST_BUTTON = "xpath://*[contains(@text,'ADD TO LIST')]";

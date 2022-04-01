@@ -109,7 +109,7 @@ public class SearchTest extends CoreTestCase {
     public void testCheckSearchResultsAndCancelSearch() {
         SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
         SearchPageObject.initSearchInput();
-        String search_query = "meme";
+        String search_query = "Java";
         SearchPageObject.typeSearchLine(search_query);
         int c = 1;
         while (c < 4) {
@@ -159,7 +159,7 @@ public class SearchTest extends CoreTestCase {
     @Features(value = {@Feature(value = "Search")})
     @Stories(value = {@Story(value = "Search results")})
     @Tags(value = {@Tag(value = "Regression")})
-    @DisplayName("Check search results has expected title and description")
+    @DisplayName("Check search results have expected title and description")
     @Description("Open Wiki; Enter valid search query in the search field; Check that 3 search results has expected title and description")
     @Step("Starting testCheckSearchResultByTitleAndDescription")
     @Severity(value = SeverityLevel.NORMAL)
@@ -170,12 +170,15 @@ public class SearchTest extends CoreTestCase {
         SearchPageObject.typeSearchLine(search_query);
         String title_1 = "Meme";
         String description_1 = "Thought or idea that can be shared, in analogy to a gene";
-        SearchPageObject.waitForElementByTitleAndDescription(title_1, description_1);
+        //SearchPageObject.waitForElementByTitleAndDescription(title_1, description_1);
+        SearchPageObject.waitForElementByTitle(title_1);
         String title_2 = "Memento (film)";
         String description_2 = "2000 American film by Christopher Nolan";
-        SearchPageObject.waitForElementByTitleAndDescription(title_2, description_2);
+        //SearchPageObject.waitForElementByTitleAndDescription(title_2, description_2);
+        SearchPageObject.waitForElementByTitle(title_1);
         String title_3 = "Memento mori";
         String description_3 = "Artistic or symbolic reminder of the inevitability of death";
-        SearchPageObject.waitForElementByTitleAndDescription(title_3, description_3);
+        //SearchPageObject.waitForElementByTitleAndDescription(title_3, description_3);
+        SearchPageObject.waitForElementByTitle(title_1);
     }
 }

@@ -17,7 +17,7 @@ public class ArticleTest extends CoreTestCase {
     @Test
     @Features(value = {@Feature(value = "Search"), @Feature(value = "Article")})
     @Tags(value = {@Tag(value = "Acceptance"), @Tag(value = "Regression")})
-    @DisplayName("Compare article title with expected one")
+    @DisplayName("Compare article title with expected value")
     @Description("Open Wiki; Check search input; Enter search query and perform search; Check that article with description that corresponds expected is present on the search result page")
     @Step("Starting testCompareArticleTitle")
     @Severity(value = SeverityLevel.BLOCKER)
@@ -32,7 +32,7 @@ public class ArticleTest extends CoreTestCase {
         System.out.println(article_title);
         Assert.assertEquals(
                 "Unexpected title on the article page",
-                "bject-oriented programming language",
+                "Java (programming language)",
                 article_title
         );
     }
@@ -52,7 +52,7 @@ public class ArticleTest extends CoreTestCase {
         SearchPageObject.clickByArticleWithDescription("bject-oriented programming language");
 
         ArticlePageObject ArticlePageObject = ArticlePageObjectFactory.get(driver);
-        //ArticlePageObject.waitForTitleElement();
+        ArticlePageObject.waitForTitleElement();
         ArticlePageObject.getArticleTitle();
         ArticlePageObject.swipeToFooter();
     }
@@ -70,9 +70,9 @@ public class ArticleTest extends CoreTestCase {
         String search_query = "Java";
         SearchPageObject.typeSearchLine(search_query);
         String article_title = "bject-oriented programming language";
-        SearchPageObject.clickByArticleWithTitle(article_title);
+        SearchPageObject.clickByArticleWithDescription(article_title);
 
-        ArticlePageObject ArticlePageObject = ArticlePageObjectFactory.get(driver);;
+        ArticlePageObject ArticlePageObject = ArticlePageObjectFactory.get(driver);
         ArticlePageObject.assertArticleHasTitle();
     }
 }

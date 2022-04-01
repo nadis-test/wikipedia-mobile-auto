@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="test.SearchTest" time="117.199" tests="8" errors="3" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="test.SearchTest" time="98.758" tests="8" errors="0" skipped="0" failures="0">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -17,9 +17,8 @@
     <property name="user.country" value="RU"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib"/>
-    <property name="sun.java.command" value="/Users/n.porotkova/GitHub/JavaAppiumMaven/target/surefire/surefirebooter2504028916229616786.jar /Users/n.porotkova/GitHub/JavaAppiumMaven/target/surefire 2022-04-01T10-59-40_587-jvmRun1 surefire6781903480347124463tmp surefire_04525128614555492096tmp"/>
+    <property name="sun.java.command" value="/Users/n.porotkova/GitHub/JavaAppiumMaven/target/surefire/surefirebooter2824130273508403317.jar /Users/n.porotkova/GitHub/JavaAppiumMaven/target/surefire 2022-04-01T14-08-23_770-jvmRun1 surefire281761462782755255tmp surefire_08702974606586845856tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="test" value="SearchTest"/>
     <property name="surefire.test.class.path" value="/Users/n.porotkova/GitHub/JavaAppiumMaven/target/test-classes:/Users/n.porotkova/GitHub/JavaAppiumMaven/target/classes:/Users/n.porotkova/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/n.porotkova/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/n.porotkova/.m2/repository/io/appium/java-client/6.1.0/java-client-6.1.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-java/3.12.0/selenium-java-3.12.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.12.0/selenium-chrome-driver-3.12.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.12.0/selenium-edge-driver-3.12.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.12.0/selenium-firefox-driver-3.12.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.12.0/selenium-ie-driver-3.12.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.12.0/selenium-opera-driver-3.12.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.12.0/selenium-remote-driver-3.12.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.12.0/selenium-safari-driver-3.12.0.jar:/Users/n.porotkova/.m2/repository/net/bytebuddy/byte-buddy/1.8.3/byte-buddy-1.8.3.jar:/Users/n.porotkova/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/n.porotkova/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/n.porotkova/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/n.porotkova/.m2/repository/com/google/guava/guava/23.6-jre/guava-23.6-jre.jar:/Users/n.porotkova/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/n.porotkova/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/n.porotkova/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/n.porotkova/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/n.porotkova/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/n.porotkova/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/Users/n.porotkova/.m2/repository/com/squareup/okhttp3/okhttp/3.9.1/okhttp-3.9.1.jar:/Users/n.porotkova/.m2/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-support/3.12.0/selenium-support-3.12.0.jar:/Users/n.porotkova/.m2/repository/org/seleniumhq/selenium/selenium-api/3.12.0/selenium-api-3.12.0.jar:/Users/n.porotkova/.m2/repository/com/google/code/gson/gson/2.8.4/gson-2.8.4.jar:/Users/n.porotkova/.m2/repository/org/apache/httpcomponents/httpclient/4.5.5/httpclient-4.5.5.jar:/Users/n.porotkova/.m2/repository/cglib/cglib/3.2.6/cglib-3.2.6.jar:/Users/n.porotkova/.m2/repository/org/ow2/asm/asm/6.0/asm-6.0.jar:/Users/n.porotkova/.m2/repository/org/apache/ant/ant/1.9.6/ant-1.9.6.jar:/Users/n.porotkova/.m2/repository/org/apache/ant/ant-launcher/1.9.6/ant-launcher-1.9.6.jar:/Users/n.porotkova/.m2/repository/commons-validator/commons-validator/1.6/commons-validator-1.6.jar:/Users/n.porotkova/.m2/repository/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar:/Users/n.porotkova/.m2/repository/commons-digester/commons-digester/1.8.1/commons-digester-1.8.1.jar:/Users/n.porotkova/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/n.porotkova/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/Users/n.porotkova/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/n.porotkova/.m2/repository/org/springframework/spring-context/5.0.5.RELEASE/spring-context-5.0.5.RELEASE.jar:/Users/n.porotkova/.m2/repository/org/springframework/spring-aop/5.0.5.RELEASE/spring-aop-5.0.5.RELEASE.jar:/Users/n.porotkova/.m2/repository/org/springframework/spring-beans/5.0.5.RELEASE/spring-beans-5.0.5.RELEASE.jar:/Users/n.porotkova/.m2/repository/org/springframework/spring-core/5.0.5.RELEASE/spring-core-5.0.5.RELEASE.jar:/Users/n.porotkova/.m2/repository/org/springframework/spring-jcl/5.0.5.RELEASE/spring-jcl-5.0.5.RELEASE.jar:/Users/n.porotkova/.m2/repository/org/springframework/spring-expression/5.0.5.RELEASE/spring-expression-5.0.5.RELEASE.jar:/Users/n.porotkova/.m2/repository/org/openpnp/opencv/3.2.0-1/opencv-3.2.0-1.jar:/Users/n.porotkova/.m2/repository/io/qameta/allure/allure-junit4/2.8.1/allure-junit4-2.8.1.jar:/Users/n.porotkova/.m2/repository/io/qameta/allure/allure-java-commons/2.8.1/allure-java-commons-2.8.1.jar:/Users/n.porotkova/.m2/repository/io/qameta/allure/allure-model/2.8.1/allure-model-2.8.1.jar:/Users/n.porotkova/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.7/jackson-databind-2.9.7.jar:/Users/n.porotkova/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar:/Users/n.porotkova/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.7/jackson-core-2.9.7.jar:/Users/n.porotkova/.m2/repository/org/apache/tika/tika-core/1.19.1/tika-core-1.19.1.jar:/Users/n.porotkova/.m2/repository/org/aspectj/aspectjrt/1.9.1/aspectjrt-1.9.1.jar:/Users/n.porotkova/.m2/repository/org/jooq/joor-java-8/0.9.9/joor-java-8-0.9.9.jar:/Users/n.porotkova/.m2/repository/org/aspectj/aspectjweaver/1.9.5/aspectjweaver-1.9.5.jar:/Users/n.porotkova/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/n.porotkova/.m2/repository/org/slf4j/slf4j-log4j12/1.7.30/slf4j-log4j12-1.7.30.jar:/Users/n.porotkova/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="allure.results.directory" value="/Users/n.porotkova/GitHub/JavaAppiumMaven/target/allure-results"/>
@@ -33,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/n.porotkova/GitHub/JavaAppiumMaven/target/surefire/surefirebooter2504028916229616786.jar:/Users/n.porotkova/.m2/repository/org/aspectj/aspectjweaver/1.9.5/aspectjweaver-1.9.5.jar"/>
+    <property name="surefire.real.class.path" value="/Users/n.porotkova/GitHub/JavaAppiumMaven/target/surefire/surefirebooter2824130273508403317.jar:/Users/n.porotkova/.m2/repository/org/aspectj/aspectjweaver/1.9.5/aspectjweaver-1.9.5.jar"/>
     <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/classes"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
@@ -63,146 +62,12 @@
     <property name="java.class.version" value="52.0"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="testAmountOfEmptySearch" classname="test.SearchTest" time="16.847"/>
-  <testcase name="testCancelSearch" classname="test.SearchTest" time="11.347"/>
-  <testcase name="testAmountOfNoEpmtySearch" classname="test.SearchTest" time="10.96"/>
-  <testcase name="testCheckSearchResultsForQuery" classname="test.SearchTest" time="24.746">
-    <error message="Expected condition failed: No search result elements present&#10; (tried for 15 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
-Expected condition failed: No search result elements present
- (tried for 15 second(s) with 500 milliseconds interval)
-	at test.SearchTest.testCheckSearchResultsForQuery_aroundBody12(SearchTest.java:141)
-	at test.SearchTest.testCheckSearchResultsForQuery(SearchTest.java:133)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-Cannot locate an element using By.xpath: //*[@class='android.view.ViewGroup'][@instance = 1]//descendant::android.widget.TextView[@resource-id = 'org.wikipedia:id/page_list_item_title']
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'k-1927', ip: 'fe80:0:0:0:c53:5b91:dabb:6a40%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_282'
-Driver info: driver.version: unknown
-	at test.SearchTest.testCheckSearchResultsForQuery_aroundBody12(SearchTest.java:141)
-	at test.SearchTest.testCheckSearchResultsForQuery(SearchTest.java:133)
-</error>
-    <system-out><![CDATA[openWikiWebPageForMobileWeb method does noting for mobile platform android
-]]></system-out>
-    <system-err><![CDATA[апр 01, 2022 11:00:26 AM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="testCheckSearchResultByTitleAndDescription" classname="test.SearchTest" time="10.808">
-    <error message="An unknown server-side error occurred while processing the command. Original error: java.lang.ClassCastException: java.util.ArrayList$ListItr cannot be cast to org.eclipse.wst.xml.xpath2.processor.internal.types.NodeType&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;k-1927&apos;, ip: &apos;fe80:0:0:0:c53:5b91:dabb:6a40%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_282&apos;&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Capabilities {app: /Users/n.porotkova/GitHub/a..., appActivity: .main.MainActivity, appPackage: org.wikipedia, automationName: Appium, databaseEnabled: false, desired: {app: /Users/n.porotkova/GitHub/a..., appActivity: .main.MainActivity, appPackage: org.wikipedia, automationName: Appium, deviceName: emulator-5554, orientation: PORTRAIT, platformName: android, platformVersion: 10}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, orientation: PORTRAIT, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 63, takesScreenshot: true, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}&#10;Session ID: 00160643-02fd-4adc-87d0-0943a9b7431b&#10;*** Element info: {Using=xpath, value=//*[@resource-id=&apos;org.wikipedia:id/page_list_item_title&apos;][contains(@text,&apos;Meme&apos;)]//following::android.widget.TextView[@resource-id = &apos;org.wikipedia:id/page_list_item_description&apos;][contains(@text,&apos;Thought or idea that can be shared, in analogy to a gene&apos;)]}" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
-An unknown server-side error occurred while processing the command. Original error: java.lang.ClassCastException: java.util.ArrayList$ListItr cannot be cast to org.eclipse.wst.xml.xpath2.processor.internal.types.NodeType
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'k-1927', ip: 'fe80:0:0:0:c53:5b91:dabb:6a40%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_282'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: /Users/n.porotkova/GitHub/a..., appActivity: .main.MainActivity, appPackage: org.wikipedia, automationName: Appium, databaseEnabled: false, desired: {app: /Users/n.porotkova/GitHub/a..., appActivity: .main.MainActivity, appPackage: org.wikipedia, automationName: Appium, deviceName: emulator-5554, orientation: PORTRAIT, platformName: android, platformVersion: 10}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, orientation: PORTRAIT, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 63, takesScreenshot: true, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 00160643-02fd-4adc-87d0-0943a9b7431b
-*** Element info: {Using=xpath, value=//*[@resource-id='org.wikipedia:id/page_list_item_title'][contains(@text,'Meme')]//following::android.widget.TextView[@resource-id = 'org.wikipedia:id/page_list_item_description'][contains(@text,'Thought or idea that can be shared, in analogy to a gene')]}
-	at test.SearchTest.testCheckSearchResultByTitleAndDescription_aroundBody14(SearchTest.java:173)
-	at test.SearchTest.testCheckSearchResultByTitleAndDescription(SearchTest.java:167)
-</error>
-    <system-out><![CDATA[openWikiWebPageForMobileWeb method does noting for mobile platform android
-getResultSearchElementByTitleAndDescription = xpath://*[@resource-id='org.wikipedia:id/page_list_item_title'][contains(@text,'Meme')]//following::android.widget.TextView[@resource-id = 'org.wikipedia:id/page_list_item_description'][contains(@text,'Thought or idea that can be shared, in analogy to a gene')]
-]]></system-out>
-    <system-err><![CDATA[апр 01, 2022 11:00:50 AM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
-INFO: Detected dialect: W3C
-апр 01, 2022 11:00:56 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
-WARNING: WebDriverException thrown by findElement(By.xpath: //*[@resource-id='org.wikipedia:id/page_list_item_title'][contains(@text,'Meme')]//following::android.widget.TextView[@resource-id = 'org.wikipedia:id/page_list_item_description'][contains(@text,'Thought or idea that can be shared, in analogy to a gene')])
-org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: java.lang.ClassCastException: java.util.ArrayList$ListItr cannot be cast to org.eclipse.wst.xml.xpath2.processor.internal.types.NodeType
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'k-1927', ip: 'fe80:0:0:0:c53:5b91:dabb:6a40%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_282'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: /Users/n.porotkova/GitHub/a..., appActivity: .main.MainActivity, appPackage: org.wikipedia, automationName: Appium, databaseEnabled: false, desired: {app: /Users/n.porotkova/GitHub/a..., appActivity: .main.MainActivity, appPackage: org.wikipedia, automationName: Appium, deviceName: emulator-5554, orientation: PORTRAIT, platformName: android, platformVersion: 10}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, orientation: PORTRAIT, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 63, takesScreenshot: true, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 00160643-02fd-4adc-87d0-0943a9b7431b
-*** Element info: {Using=xpath, value=//*[@resource-id='org.wikipedia:id/page_list_item_title'][contains(@text,'Meme')]//following::android.widget.TextView[@resource-id = 'org.wikipedia:id/page_list_item_description'][contains(@text,'Thought or idea that can be shared, in analogy to a gene')]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:344)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:54)
-	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:152)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:423)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementsByXPath(DefaultGenericMobileDriver.java:156)
-	at io.appium.java_client.AppiumDriver.findElementsByXPath(AppiumDriver.java:184)
-	at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:305)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:50)
-	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:148)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
-	at lib.ui.MainPageObject.waitForElementPresent(MainPageObject.java:48)
-	at lib.ui.SearchPageObject.waitForElementByTitleAndDescription_aroundBody30(SearchPageObject.java:147)
-	at lib.ui.SearchPageObject$AjcClosure31.run(SearchPageObject.java:1)
-	at org.aspectj.runtime.reflect.JoinPointImpl.proceed(JoinPointImpl.java:149)
-	at io.qameta.allure.aspects.StepsAspects.step(StepsAspects.java:50)
-	at lib.ui.SearchPageObject.waitForElementByTitleAndDescription(SearchPageObject.java:146)
-	at test.SearchTest.testCheckSearchResultByTitleAndDescription_aroundBody14(SearchTest.java:173)
-	at test.SearchTest$AjcClosure15.run(SearchTest.java:1)
-	at org.aspectj.runtime.reflect.JoinPointImpl.proceed(JoinPointImpl.java:149)
-	at io.qameta.allure.aspects.StepsAspects.step(StepsAspects.java:50)
-	at test.SearchTest.testCheckSearchResultByTitleAndDescription(SearchTest.java:167)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-
-]]></system-err>
-  </testcase>
-  <testcase name="testCheckSearchResultsAndCancelSearch" classname="test.SearchTest" time="24.006">
-    <error message="Expected condition failed: 1 article wasn&apos;t found on search result page&#10; (tried for 15 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
-Expected condition failed: 1 article wasn't found on search result page
- (tried for 15 second(s) with 500 milliseconds interval)
-	at test.SearchTest.testCheckSearchResultsAndCancelSearch_aroundBody10(SearchTest.java:116)
-	at test.SearchTest.testCheckSearchResultsAndCancelSearch(SearchTest.java:110)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-Cannot locate an element using By.xpath: //*[@class='android.view.ViewGroup'][@instance = 1]//descendant::android.widget.TextView[@resource-id = 'org.wikipedia:id/page_list_item_title']
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'k-1927', ip: 'fe80:0:0:0:c53:5b91:dabb:6a40%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_282'
-Driver info: driver.version: unknown
-	at test.SearchTest.testCheckSearchResultsAndCancelSearch_aroundBody10(SearchTest.java:116)
-	at test.SearchTest.testCheckSearchResultsAndCancelSearch(SearchTest.java:110)
-</error>
-    <system-out><![CDATA[openWikiWebPageForMobileWeb method does noting for mobile platform android
-]]></system-out>
-    <system-err><![CDATA[апр 01, 2022 11:01:01 AM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="testCheckSearchFieldCaption" classname="test.SearchTest" time="7.137"/>
-  <testcase name="testSearch" classname="test.SearchTest" time="11.2"/>
+  <testcase name="testAmountOfEmptySearch" classname="test.SearchTest" time="10.331"/>
+  <testcase name="testCancelSearch" classname="test.SearchTest" time="10.668"/>
+  <testcase name="testAmountOfNoEpmtySearch" classname="test.SearchTest" time="11.457"/>
+  <testcase name="testCheckSearchResultsForQuery" classname="test.SearchTest" time="25.524"/>
+  <testcase name="testCheckSearchResultByTitleAndDescription" classname="test.SearchTest" time="10.945"/>
+  <testcase name="testCheckSearchResultsAndCancelSearch" classname="test.SearchTest" time="11.423"/>
+  <testcase name="testCheckSearchFieldCaption" classname="test.SearchTest" time="8.384"/>
+  <testcase name="testSearch" classname="test.SearchTest" time="10.02"/>
 </testsuite>

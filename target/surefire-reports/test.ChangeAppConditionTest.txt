@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: test.ChangeAppConditionTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 25.698 s <<< FAILURE! - in test.ChangeAppConditionTest
+testSearchScreenChangeOrientation(test.ChangeAppConditionTest)  Time elapsed: 12.263 s  <<< ERROR!
+org.openqa.selenium.StaleElementReferenceException: 
+Cached elements 'By.xpath: //*[@text='Java (programming language)']' do not exist in DOM anymore
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'k-1927', ip: 'fe80:0:0:0:c53:5b91:dabb:6a40%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_282'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/n.porotkova/GitHub/a..., appActivity: .main.MainActivity, appPackage: org.wikipedia, automationName: Appium, databaseEnabled: false, desired: {app: /Users/n.porotkova/GitHub/a..., appActivity: .main.MainActivity, appPackage: org.wikipedia, automationName: Appium, deviceName: emulator-5554, orientation: PORTRAIT, platformName: android, platformVersion: 10}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, orientation: PORTRAIT, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 63, takesScreenshot: true, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: f9f852f0-64db-4dc4-9bd5-42a949ce3371
+	at test.ChangeAppConditionTest.testSearchScreenChangeOrientation(ChangeAppConditionTest.java:38)
+

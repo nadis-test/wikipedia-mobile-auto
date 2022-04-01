@@ -34,6 +34,8 @@ public class MainPageObject {
     public void assertElementPresent(String locator, String error_message){
         By by = this.getLocatorByString(locator);
         int amount_of_elements = getAmountOfElements(locator);
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.withMessage(error_message + "\n");
 
         if (amount_of_elements == 0){
             String default_message = "Element '" + by.toString() +"' supposed to be present;";

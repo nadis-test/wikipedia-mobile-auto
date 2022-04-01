@@ -59,6 +59,7 @@ abstract public class SearchPageObject extends MainPageObject {
     @Step("Finding search result by its instance number on the search result page")
     public void waitForSearchResultByInstance(int instance_number){
         String search_result_xpath = getResultSearchElementByInstance(instance_number);
+
         this.waitForElementPresent(
                 search_result_xpath,
                 instance_number + " article wasn't found on search result page",
