@@ -120,6 +120,7 @@ abstract public class ArticlePageObject extends MainPageObject {
     @Step("Adding an article to the Saved section. Not applicable on Android")
     public void addArticlesToMySaved(){
         if (Platform.getInstance().isMW()){
+            System.out.println("BEGINS addArticlesToMySaved");
             this.removeArticleFromSavedIfItWasAdded();
             System.out.println("addArticlesToMySaved + removeArticleFromSavedIfItWasAdded");
         }
@@ -128,11 +129,15 @@ abstract public class ArticlePageObject extends MainPageObject {
 
     @Step("Removing article from the Saved section. Not applicable on Android and iOS")
     public void removeArticleFromSavedIfItWasAdded(){
+        System.out.println("BEGINS removeArticleFromSavedIfItWasAdded");
         if (this.isElementPresent(OPTIONS_REMOVE_FROM_MY_LIST_BUTTON)){
+            //System.out.println("waitForElementAndClick(OPTIONS_REMOVE_FROM_MY_LIST_BUTTON");
             this.waitForElementAndClick(OPTIONS_REMOVE_FROM_MY_LIST_BUTTON,
                     "Cannot click on 'Remove from Saved' button", 1);
-            this.waitForElementPresent(OPTIONS_ADD_TO_MY_LIST_BUTTON,
+            //System.out.println("BEGINs waitForElementPresent(OPTIONS_ADD_TO_MY_LIST_BUTTON");
+            this.waitForElementPresent(SAVE_TO_MY_LIST_BUTTON,
                     "Cannot find 'Add to Saved' button after removing article from Saved", 1);
+            //System.out.println("END waitForElementPresent(OPTIONS_ADD_TO_MY_LIST_BUTTON");
         }
     }
 }

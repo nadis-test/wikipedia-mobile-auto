@@ -16,6 +16,11 @@ public class AuthorizationPageObject extends MainPageObject {
 
     @Step("Clicking authorization button")
     public void clickAuthButton(){
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         this.waitForElementPresent(LOGIN_BUTTON, "Cannot find Log In button", 5);
         this.waitForElementAndClick(LOGIN_BUTTON, "Cannot find and click Log In button", 5);
     }

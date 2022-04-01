@@ -37,7 +37,7 @@ abstract public class NavigationUI extends MainPageObject{
         //click Saved button on navigation panel
         if (Platform.getInstance().isMW()) {
             this.tryClickElementWithFewAttempts(SAVED_LISTS_BUTTON,
-                    "Cannot find and click 'Saved' button on panel",10);
+                    "Cannot find and click 'Saved' button on panel",15);
         }
         this.waitForElementAndClick(SAVED_LISTS_BUTTON,
                 "Saved button not found on navigation panel",
