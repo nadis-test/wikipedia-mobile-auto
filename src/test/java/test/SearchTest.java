@@ -1,5 +1,9 @@
 package test;
 
+import io.qameta.allure.*;
+import io.qameta.allure.junit4.DisplayName;
+import io.qameta.allure.junit4.Tag;
+import io.qameta.allure.junit4.Tags;
 import lib.CoreTestCase;
 import lib.ui.SearchPageObject;
 import lib.ui.factories.SearchPageObjectFactory;
@@ -8,15 +12,30 @@ import org.junit.Test;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
 
+@Epic("Tests for search controls and search results")
 public class SearchTest extends CoreTestCase {
 
     @Test
+    @Features(value = {@Feature(value = "Search")})
+    @Stories(value = {@Story(value = "Search controls")})
+    @Tags(value = {@Tag(value = "Regression")})
+    @DisplayName("Check search field captions has expected value")
+    @Description("Open Wiki; Check search input caption has epected value")
+    @Step("Starting testCompareArticleTitle")
+    @Severity(value = SeverityLevel.MINOR)
     public void testCheckSearchFieldCaption() {
         SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
         SearchPageObject.checkSearchInputCaption("Search Wikipedia");
     }
 
     @Test
+    @Features(value = {@Feature(value = "Search")})
+    @Stories(value = {@Story(value = "Search controls"), @Story(value = "Search results")})
+    @Tags(value = {@Tag(value = "Acceptance"), @Tag(value = "Regression")})
+    @DisplayName("Check the search results has one result with expected description")
+    @Description("Open Wiki; Enter search query in the search field; Check that one search result has expected description")
+    @Step("Starting testSearch")
+    @Severity(value = SeverityLevel.BLOCKER)
     public void testSearch() {
         SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
         SearchPageObject.initSearchInput();
@@ -26,6 +45,13 @@ public class SearchTest extends CoreTestCase {
     }
 
     @Test
+    @Features(value = {@Feature(value = "Search")})
+    @Stories(value = {@Story(value = "Search controls")})
+    @Tags(value = {@Tag(value = "Acceptance"), @Tag(value = "Regression")})
+    @DisplayName("Check the cancel search button states")
+    @Description("Open Wiki; Enter search query in the search field; Check that cancel search button is present; Click cancel button; Check that cancel button is not present")
+    @Step("Starting testCancelSearch")
+    @Severity(value = SeverityLevel.CRITICAL)
     public void testCancelSearch() {
         SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
         SearchPageObject.initSearchInput();
@@ -36,6 +62,13 @@ public class SearchTest extends CoreTestCase {
     }
 
     @Test
+    @Features(value = {@Feature(value = "Search")})
+    @Stories(value = {@Story(value = "Search results")})
+    @Tags(value = {@Tag(value = "Acceptance"), @Tag(value = "Regression")})
+    @DisplayName("Check that valid search query has results")
+    @Description("Open Wiki; Enter valid search query in the search field; Check that search results page has at least one search result")
+    @Step("Starting testAmountOfNoEpmtySearch")
+    @Severity(value = SeverityLevel.BLOCKER)
     public void testAmountOfNoEpmtySearch() {
         SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
         SearchPageObject.initSearchInput();
@@ -49,6 +82,13 @@ public class SearchTest extends CoreTestCase {
     }
 
     @Test
+    @Features(value = {@Feature(value = "Search")})
+    @Stories(value = {@Story(value = "Search results")})
+    @Tags(value = {@Tag(value = "Regression")})
+    @DisplayName("Check that invalid search query has no results")
+    @Description("Open Wiki; Enter invalid search query in the search field; Check that search results page has 'empty results' label")
+    @Step("Starting testAmountOfEmptySearch")
+    @Severity(value = SeverityLevel.MINOR)
     public void testAmountOfEmptySearch() {
         SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
         SearchPageObject.initSearchInput();
@@ -59,6 +99,13 @@ public class SearchTest extends CoreTestCase {
     }
 
     @Test
+    @Features(value = {@Feature(value = "Search")})
+    @Stories(value = {@Story(value = "Search controls"), @Story(value = "Search results")})
+    @Tags(value = {@Tag(value = "Regression")})
+    @DisplayName("Check 3 search results and cancel search")
+    @Description("Open Wiki; Enter valid search query in the search field; Check that at least 3 search results are shown; Click cancel search button; Check that no search results are shown")
+    @Step("Starting testCheckSearchResultsAndCancelSearch")
+    @Severity(value = SeverityLevel.NORMAL)
     public void testCheckSearchResultsAndCancelSearch() {
         SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
         SearchPageObject.initSearchInput();
@@ -75,6 +122,13 @@ public class SearchTest extends CoreTestCase {
     }
 
     @Test
+    @Features(value = {@Feature(value = "Search")})
+    @Stories(value = {@Story(value = "Search results")})
+    @Tags(value = {@Tag(value = "Acceptance"), @Tag(value = "Regression")})
+    @DisplayName("Check search results contain search query")
+    @Description("Open Wiki; Enter valid search query in the search field; Check that visible search results contain search query in title")
+    @Step("Starting testCheckSearchResultsForQuery")
+    @Severity(value = SeverityLevel.BLOCKER)
     public void testCheckSearchResultsForQuery() {
         SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
         SearchPageObject.initSearchInput();
@@ -102,6 +156,13 @@ public class SearchTest extends CoreTestCase {
     }
 
     @Test
+    @Features(value = {@Feature(value = "Search")})
+    @Stories(value = {@Story(value = "Search results")})
+    @Tags(value = {@Tag(value = "Regression")})
+    @DisplayName("Check search results has expected title and description")
+    @Description("Open Wiki; Enter valid search query in the search field; Check that 3 search results has expected title and description")
+    @Step("Starting testCheckSearchResultByTitleAndDescription")
+    @Severity(value = SeverityLevel.NORMAL)
     public void testCheckSearchResultByTitleAndDescription(){
         SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
         SearchPageObject.initSearchInput();

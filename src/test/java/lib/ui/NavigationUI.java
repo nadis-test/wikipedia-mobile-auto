@@ -1,6 +1,7 @@
 package lib.ui;
 
 import io.appium.java_client.AppiumDriver;
+import io.qameta.allure.Step;
 import lib.Platform;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -14,6 +15,7 @@ abstract public class NavigationUI extends MainPageObject{
         super(driver);
     }
 
+    @Step("Opening navigation panel")
     public void openNavigation(){
         if (Platform.getInstance().isMW()) {
             this.waitForElementAndClick(OPEN_NAVIGATION,
@@ -22,7 +24,7 @@ abstract public class NavigationUI extends MainPageObject{
                 Platform.getInstance().getPlatformVar());}
     }
 
-
+    @Step("Returning from search results page to main page")
     public void returnFromSearchResultsToMainPage(){
         //возвращаюсь со страницы результатов поиска на главную страницу
             this.waitForElementAndClick(NAVIGATE_TO_MAIN_PAGE_BUTTON,
@@ -30,6 +32,7 @@ abstract public class NavigationUI extends MainPageObject{
                     5);
     }
 
+    @Step("Clicking Saved lists button")
     public void clickSavedLists(){
         //click Saved button on navigation panel
         if (Platform.getInstance().isMW()) {

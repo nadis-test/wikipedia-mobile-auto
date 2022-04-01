@@ -1,5 +1,9 @@
 package test;
 
+import io.qameta.allure.*;
+import io.qameta.allure.junit4.DisplayName;
+import io.qameta.allure.junit4.Tag;
+import io.qameta.allure.junit4.Tags;
 import lib.CoreTestCase;
 import lib.Platform;
 import lib.ui.*;
@@ -7,6 +11,7 @@ import lib.ui.factories.*;
 import org.junit.Assert;
 import org.junit.Test;
 
+@Epic("Tests for managing saved articles lists")
 public class MyListsTest extends CoreTestCase {
     private static final String
             FOLDER_NAME = "my list",
@@ -14,6 +19,13 @@ public class MyListsTest extends CoreTestCase {
             password = "qwerty@3";
 
     @Test
+    @Features(value = {@Feature(value = "Saving articles")})
+    @Tags(value = {@Tag(value = "Regression")})
+    @DisplayName("Save one article to the list")
+    @Description("Open Wiki; Enter valid query and perform search; Open first article; Click Save article button; Return to search result page; " +
+            "Return to main page; Open Saved lists; Check article is present in Saved list")
+    @Step("Starting testSaveFirstArticleToMyList")
+    @Severity(value = SeverityLevel.NORMAL)
     public void testSaveFirstArticleToMyList(){
 
         SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
@@ -56,6 +68,16 @@ public class MyListsTest extends CoreTestCase {
     }
 
     @Test
+    @Features(value = {@Feature(value = "Saving articles")})
+    @Tags(value = {@Tag(value = "Regression")})
+    @DisplayName("Save two articles, delete one article")
+    @Description("Open Wiki; Enter valid query and perform search; Open first article; Click Save article button; Return to search result page; " +
+            "Open second article; Click Save article button; Return to search result page" +
+            "Return to main page; Open Saved lists; Check two articles are present in Saved list" +
+            "Delete 1st article from Saved list; Check 1st article is not present in Saved list" +
+            "Check 2nd article still present in Saved list")
+    @Step("testSaveTwoArticlesDeleteOneArticle")
+    @Severity(value = SeverityLevel.NORMAL)
     public void testSaveTwoArticlesDeleteOneArticle(){
         SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
         SearchPageObject.initSearchInput();
